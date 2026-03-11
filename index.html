@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Visa Guide - Official Government Visa Websites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+        
+        .search-container {
+            max-width: 500px;
+            margin: 20px auto;
+            position: relative;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            border: 2px solid #667eea;
+            border-radius: 30px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        #searchInput:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        #searchResults {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            max-height: 400px;
+            overflow-y: auto;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+        
+        .search-result-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .search-result-item:hover {
+            background: #f0f0ff;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-result-item strong {
+            color: #667eea;
+        }
+        
+        .region-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .region-nav a {
+            background: rgba(255,255,255,0.95);
+            color: #667eea;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .region-nav a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .region-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .region-section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .country-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .country-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .country-card.hidden {
+            display: none;
+        }
+        
+        .country-card h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .country-flag {
+            font-size: 1.5em;
+        }
+        
+        .visa-links {
+            list-style: none;
+        }
+        
+        .visa-links li {
+            margin-bottom: 12px;
+        }
+        
+        .visa-links a {
+            color: #667eea;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-size: 0.95em;
+            word-break: break-all;
+        }
+        
+        .visa-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .visa-links .official {
+            border-left: 3px solid #28a745;
+        }
+        
+        .visa-links .evisa {
+            border-left: 3px solid #17a2b8;
+        }
+        
+        .visa-links .arrival {
+            border-left: 3px solid #ffc107;
+        }
+        
+        .icon {
+            font-size: 1.1em;
+            min-width: 1.5em;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #856404;
+        }
+        
+        .legend {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: white;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .country-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .region-section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Global Visa Guide</h1>
+            <p class="subtitle">Official Government Visa & E-Visa Websites Only</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search for a country..." autocomplete="off">
+                <div id="searchResults"></div>
+            </div>
+        </header>
+        
+        <nav class="region-nav">
+            <a href="#europe">🇪🇺 Europe</a>
+            <a href="#asia">🌏 Asia</a>
+            <a href="#latin-america">🌎 Latin America</a>
+        </nav>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #28a745;"></div>
+                <span>Official Government Visa Website</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #17a2b8;"></div>
+                <span>Official E-Visa Portal</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffc107;"></div>
+                <span>Official Digital Arrival Card</span>
+            </div>
+        </div>
+
+        <!-- EUROPE SECTION -->
+        <section id="europe" class="region-section">
+            <h2>🇪🇺 Europe</h2>
+            
+            <div class="country-grid">
+                <div class="country-card" data-country="austria">
+                    <h3><span class="country-flag">🇦🇹</span> Austria</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.bmeia.gv.at/en/" class="official" target="_blank"><span class="icon">🏛️</span> Federal Ministry (BMEIA)</a></li>
+                        <li><a href="https://www.schengenvisainfo.com/austria-visa/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="belgium">
+                    <h3><span class="country-flag">🇧🇪</span> Belgium</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://dofi.ibz.be/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Office</a></li>
+                        <li><a href="https://visaonweb.diplomatie.be/" class="evisa" target="_blank"><span class="icon">💻</span> Visa-on-Web</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="bulgaria">
+                    <h3><span class="country-flag">🇧🇬</span> Bulgaria</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.bg/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://visa.mfa.bg/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="croatia">
+                    <h3><span class="country-flag">🇭🇷</span> Croatia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://mvep.gov.hr/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://croatia-visa.mvep.hr/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="cyprus">
+                    <h3><span class="country-flag">🇨🇾</span> Cyprus</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.cy/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.visa.gov.cy/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="czech republic,czechia">
+                    <h3><span class="country-flag">🇨🇿</span> Czech Republic</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mzv.cz/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://visa.mzv.cz/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="denmark">
+                    <h3><span class="country-flag">🇩🇰</span> Denmark</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.nyidanmark.dk/" class="official" target="_blank"><span class="icon">🏛️</span> Ny i Danmark</a></li>
+                        <li><a href="https://visa.um.dk/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="estonia">
+                    <h3><span class="country-flag">🇪🇪</span> Estonia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.vm.ee/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://eelviisataotlus.vm.ee/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="finland">
+                    <h3><span class="country-flag">🇫🇮</span> Finland</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://migri.fi/" class="official" target="_blank"><span class="icon">🏛️</span> Finnish Immigration</a></li>
+                        <li><a href="https://enterfinland.fi/" class="evisa" target="_blank"><span class="icon">💻</span> Enter Finland</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="france">
+                    <h3><span class="country-flag">🇫🇷</span> France</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://france-visas.gouv.fr/" class="official" target="_blank"><span class="icon">🏛️</span> France-Visas Official</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="germany">
+                    <h3><span class="country-flag">🇩🇪</span> Germany</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.auswaertiges-amt.de/" class="official" target="_blank"><span class="icon">🏛️</span> Federal Foreign Office</a></li>
+                        <li><a href="https://videx.diplo.de/" class="evisa" target="_blank"><span class="icon">💻</span> VIDEX Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="greece">
+                    <h3><span class="country-flag">🇬🇷</span> Greece</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gr/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.visahellas.gr/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="hungary">
+                    <h3><span class="country-flag">🇭🇺</span> Hungary</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://konzuliszolgalat.kormany.hu/" class="official" target="_blank"><span class="icon">🏛️</span> Consular Services</a></li>
+                        <li><a href="https://visa.mfa.gov.hu/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="iceland">
+                    <h3><span class="country-flag">🇮🇸</span> Iceland</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.utl.is/" class="official" target="_blank"><span class="icon">🏛️</span> Directorate of Immigration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="italy">
+                    <h3><span class="country-flag">🇮🇹</span> Italy</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.esteri.it/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://vistoperitalia.esteri.it/" class="evisa" target="_blank"><span class="icon">💻</span> Visa for Italy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="latvia">
+                    <h3><span class="country-flag">🇱🇻</span> Latvia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.lv/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://epak.pmlp.gov.lv/" class="evisa" target="_blank"><span class="icon">💻</span> E-Permit Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="lithuania">
+                    <h3><span class="country-flag">🇱🇹</span> Lithuania</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://urm.lt/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://visa.vrm.lt/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="luxembourg">
+                    <h3><span class="country-flag">🇱🇺</span> Luxembourg</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://maee.gouvernement.lu/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://guichet.lu/" class="evisa" target="_blank"><span class="icon">💻</span> Guichet.lu Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="malta">
+                    <h3><span class="country-flag">🇲🇹</span> Malta</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://foreignandeu.gov.mt/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="netherlands">
+                    <h3><span class="country-flag">🇳🇱</span> Netherlands</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.government.nl/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
+                        <li><a href="https://www.netherlandsworldwide.nl/" class="evisa" target="_blank"><span class="icon">💻</span> Netherlands Worldwide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="norway">
+                    <h3><span class="country-flag">🇳🇴</span> Norway</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.udi.no/" class="official" target="_blank"><span class="icon">🏛️</span> UDI Immigration</a></li>
+                        <li><a href="https://selfservice.udi.no/" class="evisa" target="_blank"><span class="icon">💻</span> Self-Service Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="poland">
+                    <h3><span class="country-flag">🇵🇱</span> Poland</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.pl/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
+                        <li><a href="https://www.e-konsulat.gov.pl/" class="evisa" target="_blank"><span class="icon">💻</span> E-Konsulat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="portugal">
+                    <h3><span class="country-flag">🇵🇹</span> Portugal</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://vistos.mne.gov.pt/" class="official" target="_blank"><span class="icon">🏛️</span> Visa Information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="romania">
+                    <h3><span class="country-flag">🇷🇴</span> Romania</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mae.ro/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.mae.ro/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="slovakia">
+                    <h3><span class="country-flag">🇸🇰</span> Slovakia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mzv.sk/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://ezov.mzv.sk/" class="evisa" target="_blank"><span class="icon">💻</span> E-ZOV Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="slovenia">
+                    <h3><span class="country-flag">🇸🇮</span> Slovenia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.si/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
+                        <li><a href="https://evizum.mnz.gov.si/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="spain">
+                    <h3><span class="country-flag">🇪🇸</span> Spain</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.exteriores.gob.es/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://visas.mae.es/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="sweden">
+                    <h3><span class="country-flag">🇸🇪</span> Sweden</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.migrationsverket.se/" class="official" target="_blank"><span class="icon">🏛️</span> Migration Agency</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="switzerland">
+                    <h3><span class="country-flag">🇨🇭</span> Switzerland</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.sem.admin.ch/" class="official" target="_blank"><span class="icon">🏛️</span> State Secretariat for Migration</a></li>
+                        <li><a href="https://www.eda.admin.ch/" class="evisa" target="_blank"><span class="icon">💻</span> FDFA Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="united kingdom,uk,great britain">
+                    <h3><span class="country-flag">🇬🇧</span> United Kingdom</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.uk/browse/visas-immigration" class="official" target="_blank"><span class="icon">🏛️</span> GOV.UK Visas</a></li>
+                        <li><a href="https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta" class="arrival" target="_blank"><span class="icon">📱</span> ETA Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="ireland">
+                    <h3><span class="country-flag">🇮🇪</span> Ireland</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.ireland.ie/" class="official" target="_blank"><span class="icon">🏛️</span> Department of Foreign Affairs</a></li>
+                        <li><a href="https://www.visas.inis.gov.ie/" class="evisa" target="_blank"><span class="icon">💻</span> AVATS Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="moldova">
+                    <h3><span class="country-flag">🇲🇩</span> Moldova</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.md/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.gov.md/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="russia">
+                    <h3><span class="country-flag">🇷🇺</span> Russia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mid.ru/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.kdmid.ru/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="turkey,turkiye">
+                    <h3><span class="country-flag">🇹🇷</span> Turkey</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.tr/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.gov.tr/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="note">
+                <strong>📌 Note:</strong> The Schengen Area includes 29 European countries with common visa rules. Starting in 2026, visa-exempt travelers will need <strong>ETIAS</strong> authorization (official: https://travel-europe.europa.eu/etias_en). Beware of fraudulent sites claiming to offer ETIAS before official launch.
+            </div>
+        </section>
+
+        <!-- ASIA SECTION -->
+        <section id="asia" class="region-section">
+            <h2>🌏 Asia</h2>
+            
+            <div class="country-grid">
+                <div class="country-card" data-country="armenia">
+                    <h3><span class="country-flag">🇦🇲</span> Armenia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.am/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.mfa.am/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="azerbaijan">
+                    <h3><span class="country-flag">🇦🇿</span> Azerbaijan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.az/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.gov.az/" class="evisa" target="_blank"><span class="icon">💻</span> ASAN E-Visa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="bahrain">
+                    <h3><span class="country-flag">🇧🇭</span> Bahrain</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.bh/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.gov.bh/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="bangladesh">
+                    <h3><span class="country-flag">🇧🇩</span> Bangladesh</h3>
+                    <ul class="visa-links">
+                        <li><a href="http://www.mofa.gov.bd/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.gov.bd/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="cambodia">
+                    <h3><span class="country-flag">🇰🇭</span> Cambodia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfaic.gov.kh/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.gov.kh/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://arrival.gov.kh/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="china">
+                    <h3><span class="country-flag">🇨🇳</span> China</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.cn/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="georgia">
+                    <h3><span class="country-flag">🇬🇪</span> Georgia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.ge/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.gov.ge/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="india">
+                    <h3><span class="country-flag">🇮🇳</span> India</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mea.gov.in/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of External Affairs</a></li>
+                        <li><a href="https://indianvisaonline.gov.in/evisa/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://indianvisaonline.gov.in/earrival/" class="arrival" target="_blank"><span class="icon">📱</span> E-Arrival</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="indonesia">
+                    <h3><span class="country-flag">🇮🇩</span> Indonesia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.kemlu.go.id/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.imigrasi.go.id/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="iran">
+                    <h3><span class="country-flag">🇮🇷</span> Iran</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.gov.ir/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisatraveller.mfa.ir/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="iraq">
+                    <h3><span class="country-flag">🇮🇶</span> Iraq</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://evisa.iq/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="israel">
+                    <h3><span class="country-flag">🇮🇱</span> Israel</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.il/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
+                        <li><a href="https://israel-entry.piba.gov.il/" class="arrival" target="_blank"><span class="icon">📱</span> ETA-IL Entry</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="japan">
+                    <h3><span class="country-flag">🇯🇵</span> Japan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.go.jp/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.evisa.mofa.go.jp/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="jordan">
+                    <h3><span class="country-flag">🇯🇴</span> Jordan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.jo/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://eservices.moi.gov.jo/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="kazakhstan">
+                    <h3><span class="country-flag">🇰🇿</span> Kazakhstan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.kz/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
+                        <li><a href="https://www.vmp.gov.kz/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="kuwait">
+                    <h3><span class="country-flag">🇰🇼</span> Kuwait</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.kw/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://kuwaitvisa.moi.gov.kw/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="kyrgyzstan">
+                    <h3><span class="country-flag">🇰🇬</span> Kyrgyzstan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.evisa.e-gov.kg/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="laos">
+                    <h3><span class="country-flag">🇱🇦</span> Laos</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://laoevisa.gov.la/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="malaysia">
+                    <h3><span class="country-flag">🇲🇾</span> Malaysia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.imi.gov.my/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Department</a></li>
+                        <li><a href="https://malaysiavisa.imi.gov.my/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://imigresen-online.imi.gov.my/mdac/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="mongolia">
+                    <h3><span class="country-flag">🇲🇳</span> Mongolia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://evisa.mn/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="myanmar">
+                    <h3><span class="country-flag">🇲🇲</span> Myanmar</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://evisa.moip.gov.mm/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="nepal">
+                    <h3><span class="country-flag">🇳🇵</span> Nepal</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.nepalimmigration.gov.np/" class="official" target="_blank"><span class="icon">🏛️</span> Department of Immigration</a></li>
+                        <li><a href="https://nepaliport.immigration.gov.np/" class="evisa" target="_blank"><span class="icon">💻</span> Online Visa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="oman">
+                    <h3><span class="country-flag">🇴🇲</span> Oman</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.om/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.rop.gov.om/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="pakistan">
+                    <h3><span class="country-flag">🇵🇰</span> Pakistan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://visa.nadra.gov.pk/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="philippines">
+                    <h3><span class="country-flag">🇵🇭</span> Philippines</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.dfa.gov.ph/" class="official" target="_blank"><span class="icon">🏛️</span> Department of Foreign Affairs</a></li>
+                        <li><a href="https://evisa.gov.ph/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="qatar">
+                    <h3><span class="country-flag">🇶🇦</span> Qatar</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.qa/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.hayya.qa/" class="evisa" target="_blank"><span class="icon">💻</span> Hayya Platform</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="saudi arabia,ksa">
+                    <h3><span class="country-flag">🇸🇦</span> Saudi Arabia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.sa/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://visa.visitsaudi.com/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="singapore">
+                    <h3><span class="country-flag">🇸🇬</span> Singapore</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.ica.gov.sg/" class="official" target="_blank"><span class="icon">🏛️</span> ICA Singapore</a></li>
+                        <li><a href="https://eservices.ica.gov.sg/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="south korea,korea">
+                    <h3><span class="country-flag">🇰🇷</span> South Korea</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.visa.go.kr/" class="official" target="_blank"><span class="icon">🏛️</span> Visa Portal</a></li>
+                        <li><a href="https://www.k-eta.go.kr/" class="arrival" target="_blank"><span class="icon">📱</span> K-ETA Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="sri lanka">
+                    <h3><span class="country-flag">🇱🇰</span> Sri Lanka</h3>
+                    <ul class="visa-links">
+                        <li><a href="http://www.eta.gov.lk/" class="evisa" target="_blank"><span class="icon">💻</span> ETA Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="taiwan">
+                    <h3><span class="country-flag">🇹🇼</span> Taiwan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://visawebapp.boca.gov.tw/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="tajikistan">
+                    <h3><span class="country-flag">🇹🇯</span> Tajikistan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.evisa.tj/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="thailand">
+                    <h3><span class="country-flag">🇹🇭</span> Thailand</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mfa.go.th/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.thaievisa.go.th/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://tdac.immigration.go.th/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="uae,united arab emirates">
+                    <h3><span class="country-flag">🇦🇪</span> United Arab Emirates</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://u.ae/" class="official" target="_blank"><span class="icon">🏛️</span> UAE Government Portal</a></li>
+                        <li><a href="https://smartservices.ica.gov.ae/" class="evisa" target="_blank"><span class="icon">💻</span> ICA Smart Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="uzbekistan">
+                    <h3><span class="country-flag">🇺🇿</span> Uzbekistan</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://e-visa.gov.uz/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="vietnam">
+                    <h3><span class="country-flag">🇻🇳</span> Vietnam</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://evisa.gov.vn/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- LATIN AMERICA SECTION -->
+        <section id="latin-america" class="region-section">
+            <h2>🌎 Latin America</h2>
+            
+            <div class="country-grid">
+                <div class="country-card" data-country="argentina">
+                    <h3><span class="country-flag">🇦🇷</span> Argentina</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://cancilleria.gob.ar/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://tramites.gob.ar/" class="evisa" target="_blank"><span class="icon">💻</span> Online Procedures</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="bolivia">
+                    <h3><span class="country-flag">🇧🇴</span> Bolivia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.rree.gob.bo/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="brazil">
+                    <h3><span class="country-flag">🇧🇷</span> Brazil</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gov.br/mre/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://brazil.vfsevisa.com/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="chile">
+                    <h3><span class="country-flag">🇨🇱</span> Chile</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.minrel.gob.cl/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://tramites.minrel.gov.cl/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Tramites</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="colombia">
+                    <h3><span class="country-flag">🇨🇴</span> Colombia</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.cancilleria.gov.co/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="costa rica">
+                    <h3><span class="country-flag">🇨🇷</span> Costa Rica</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.rree.go.cr/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.migracion.go.cr/" class="evisa" target="_blank"><span class="icon">💻</span> Immigration Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="cuba">
+                    <h3><span class="country-flag">🇨🇺</span> Cuba</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://evisacuba.cu/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Cuba</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="ecuador">
+                    <h3><span class="country-flag">🇪🇨</span> Ecuador</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://serviciosdigitales.cancilleria.gob.ec/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="el salvador">
+                    <h3><span class="country-flag">🇸🇻</span> El Salvador</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.rree.gob.sv/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="guatemala">
+                    <h3><span class="country-flag">🇬🇹</span> Guatemala</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.minex.gob.gt/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://portal.migracion.gob.gt/" class="evisa" target="_blank"><span class="icon">💻</span> Immigration Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="honduras">
+                    <h3><span class="country-flag">🇭🇳</span> Honduras</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.sre.gob.hn/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.inm.gob.hn/" class="evisa" target="_blank"><span class="icon">💻</span> Immigration Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="mexico">
+                    <h3><span class="country-flag">🇲🇽</span> Mexico</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gob.mx/sre/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.inm.gob.mx/sae/" class="arrival" target="_blank"><span class="icon">📱</span> SAE Authorization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="nicaragua">
+                    <h3><span class="country-flag">🇳🇮</span> Nicaragua</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.rree.gob.ni/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="panama">
+                    <h3><span class="country-flag">🇵🇦</span> Panama</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.migracion.gob.pa/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="paraguay">
+                    <h3><span class="country-flag">🇵🇾</span> Paraguay</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mre.gov.py/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.migraciones.gov.py/" class="evisa" target="_blank"><span class="icon">💻</span> Immigration Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="peru">
+                    <h3><span class="country-flag">🇵🇪</span> Peru</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gob.pe/rree" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.gob.pe/migraciones" class="evisa" target="_blank"><span class="icon">💻</span> Migraciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="suriname">
+                    <h3><span class="country-flag">🇸🇷</span> Suriname</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://suriname.vfsevisa.com/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="trinidad">
+                    <h3><span class="country-flag">🇹🇹</span> Trinidad and Tobago</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://nationalsecurity.gov.tt/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of National Security</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="uruguay">
+                    <h3><span class="country-flag">🇺🇾</span> Uruguay</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.gub.uy/ministerio-relaciones-exteriores/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="country-card" data-country="venezuela">
+                    <h3><span class="country-flag">🇻🇪</span> Venezuela</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mppre.gob.ve/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://saia.mre.gob.ve/" class="evisa" target="_blank"><span class="icon">💻</span> SAIA Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="note">
+                <strong>📌 Note:</strong> Many Latin American countries offer visa-free entry for tourists from North America, Europe, and other regions for stays of 30-90 days. Always verify current requirements before travel as policies can change.
+            </div>
+        </section>
+
+        <footer>
+            <p>⚠️ <strong>Disclaimer:</strong> Visa requirements change frequently. Always verify with official government sources before travel.</p>
+            <p>This guide provides links to official government visa websites only (.gov, .gov.xx domains). We are not affiliated with any government agency.</p>
+            <p style="margin-top: 15px;">Last Updated: March 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const countryCards = document.querySelectorAll('.country-card');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            
+            if (query.length === 0) {
+                searchResults.style.display = 'none';
+                countryCards.forEach(card => card.classList.remove('hidden'));
+                return;
+            }
+
+            const results = [];
+            
+            countryCards.forEach(card => {
+                const countryName = card.querySelector('h3').textContent.toLowerCase();
+                const dataCountry = card.getAttribute('data-country');
+                
+                if (countryName.includes(query) || (dataCountry && dataCountry.includes(query))) {
+                    results.push({
+                        card: card,
+                        name: card.querySelector('h3').textContent
+                    });
+                }
+            });
+
+            // Show/hide cards and build search results
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="search-result-item">No countries found</div>';
+                searchResults.style.display = 'block';
+                countryCards.forEach(card => card.classList.add('hidden'));
+            } else {
+                searchResults.innerHTML = results.map(r => 
+                    `<div class="search-result-item" data-target="${r.card.id || ''}">${r.name}</div>`
+                ).join('');
+                searchResults.style.display = 'block';
+                
+                countryCards.forEach(card => {
+                    const isVisible = results.some(r => r.card === card);
+                    card.classList.toggle('hidden', !isVisible);
+                });
+
+                // Add click handlers to search results
+                searchResults.querySelectorAll('.search-result-item').forEach(item => {
+                    item.addEventListener('click', function() {
+                        const targetName = this.textContent;
+                        const targetCard = Array.from(countryCards).find(card => 
+                            card.querySelector('h3').textContent === targetName
+                        );
+                        if (targetCard) {
+                            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            searchResults.style.display = 'none';
+                            // Keep search text - don't clear it
+                        }
+                    });
+                });
+            }
+        });
+
+        // Hide search results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('.region-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
