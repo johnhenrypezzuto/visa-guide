@@ -12,7 +12,12 @@ visa-guide/
 
 ## 🌍 Coverage
 
-The website includes official visa and e-visa links for:
+The website includes official visa and e-visa links for **128+ countries** across 7 regions:
+
+### North America (3 countries)
+- United States (ESTA, USCIS)
+- Canada (eTA)
+- Greenland
 
 ### Europe (33 countries)
 - All Schengen Area countries (Austria, Belgium, France, Germany, Italy, Spain, etc.)
@@ -27,10 +32,26 @@ The website includes official visa and e-visa links for:
 - Middle East (Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Israel, Iran, Iraq)
 - Caucasus (Armenia, Azerbaijan, Georgia)
 
-### Latin America (20 countries)
+### Africa (16 countries)
+- Southern Africa (South Africa, Botswana, Namibia, Zimbabwe, Zambia)
+- East Africa (Kenya, Tanzania, Uganda, Rwanda, Ethiopia)
+- West Africa (Nigeria, Ghana, Senegal)
+- North Africa (Egypt, Morocco, Tunisia)
+
+### Oceania (7 countries)
+- Australia (ETA)
+- New Zealand (NZeTA)
+- Pacific Islands (Fiji, Papua New Guinea, Samoa, Tonga, Vanuatu)
+
+### Caribbean (13 countries)
+- Greater Antilles (Jamaica, Dominican Republic, Cuba)
+- Lesser Antilles (Bahamas, Barbados, Saint Lucia, Antigua and Barbuda, Grenada, Dominica, Saint Vincent)
+- Dutch Caribbean (Aruba, Curaçao)
+- Other (Cayman Islands, Bermuda, Trinidad and Tobago)
+
+### Latin America (18 countries)
 - South America (Brazil, Argentina, Chile, Peru, Colombia, Ecuador, Bolivia, Paraguay, Uruguay, Venezuela, Suriname)
 - Central America (Mexico, Guatemala, Costa Rica, Panama, Nicaragua, El Salvador, Honduras)
-- Caribbean (Cuba, Trinidad and Tobago)
 
 ## 🔗 Link Types
 
