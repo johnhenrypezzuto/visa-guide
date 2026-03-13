@@ -46,7 +46,56 @@
             border-radius: 24px;
             margin-bottom: 40px;
             box-shadow: var(--shadow-xl);
+            position: relative;
         }
+        
+        .citizenship-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .citizenship-selector label {
+            font-weight: 600;
+            color: var(--gray);
+            font-size: 0.9em;
+        }
+        
+        .citizenship-selector select {
+            padding: 10px 16px;
+            font-size: 0.95em;
+            border: 2px solid var(--light);
+            border-radius: 12px;
+            outline: none;
+            cursor: pointer;
+            background: var(--white);
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .citizenship-selector select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        .visa-requirement-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 700;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+        
+        .badge-free { background: #d1fae5; color: #065f46; }
+        .badge-evisa { background: #cffafe; color: #164e63; }
+        .badge-voa { background: #fef3c7; color: #92400e; }
+        .badge-eta { background: #e0e7ff; color: #3730a3; }
+        .badge-required { background: #fee2e2; color: #991b1b; }
         
         h1 {
             font-size: 3em;
@@ -209,6 +258,7 @@
         
         .country-card:hover::before { opacity: 1; }
         .country-card.hidden { display: none; }
+        .region-section.hidden { display: none; }
         
         .country-card h3 {
             color: var(--dark);
@@ -218,6 +268,15 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 480px) {
+            .citizenship-selector {
+                position: static;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
         }
         
         .country-flag { font-size: 1.8em; }
@@ -297,6 +356,16 @@
             <h1>🌍 Global Visa Guide</h1>
             <p class="subtitle">Official Government Visa & E-Visa Websites Only</p>
             
+            <div class="citizenship-selector">
+                <label for="citizenshipSelect">🛂 Your Passport:</label>
+                <select id="citizenshipSelect">
+                    <option value="us">🇺🇸 United States</option>
+                    <option value="eu">🇪🇺 European Union</option>
+                    <option value="cn">🇨🇳 China</option>
+                    <option value="jp">🇯🇵 Japan</option>
+                </select>
+            </div>
+            
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="🔍 Search for a country..." autocomplete="off">
                 <div id="searchResults"></div>
@@ -326,10 +395,24 @@
                 <div class="legend-color" style="background: #f59e0b;"></div>
                 <span>Official Digital Arrival Card</span>
             </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ef4444;"></div>
+                <span>Visa on Arrival Available</span>
+            </div>
         </div>
         
         <div class="note" style="background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%); border-color: #06b6d4; color: #164e63;">
             <strong>💰 Visa Fees & Duration:</strong> Costs and validity shown are <strong>approximate</strong> for US/EU/UK passport holders. Fees vary by nationality and visa type. <strong>Always verify on official government sites before applying.</strong> Third-party sites often charge 2-5x official fees.
+        </div>
+
+        <div class="note" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-color: #f59e0b; color: #92400e; margin-top: 15px;">
+            <strong>⏱️ Visa Processing Times (Approximate):</strong>
+            <ul style="margin-top: 8px; margin-left: 20px;">
+                <li><strong>E-Visa:</strong> 1-5 business days (most common: 2-3 days)</li>
+                <li><strong>Visa on Arrival (VoA):</strong> Immediate at airport (allow 30-60 min for queues)</li>
+                <li><strong>Embassy Visa:</strong> 5-15 business days (varies by country)</li>
+                <li><strong>ETA/eTA:</strong> Instant to 72 hours (most approved within minutes)</li>
+            </ul>
         </div>
 
         <!-- NORTH AMERICA -->
@@ -687,6 +770,7 @@
                         <li><a href="https://www.evisa.gov.kh/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                         <li><a href="https://arrival.gov.kh/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> ~$36 • 3 months • 30 days stay • <strong>Processing:</strong> 3 business days | <strong>VoA:</strong> $30, immediate at airport</p>
                 </div>
                 
                 <div class="country-card" data-country="china">
@@ -714,7 +798,7 @@
                         <li><a href="https://indianvisaonline.gov.in/evisa/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                         <li><a href="https://indianvisaonline.gov.in/earrival/" class="arrival" target="_blank"><span class="icon">📱</span> E-Arrival</a></li>
                     </ul>
-                    <p class="visa-info"><strong>e-Tourist:</strong> ~$25-100 • 1-5 years • 90 days/visit</p>
+                    <p class="visa-info"><strong>e-Tourist:</strong> ~$25-100 • 1-5 years • 90 days/visit • <strong>Processing:</strong> 72 hours (apply 4 days before travel)</p>
                 </div>
                 
                 <div class="country-card" data-country="indonesia">
@@ -723,6 +807,7 @@
                         <li><a href="https://www.kemlu.go.id/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://evisa.imigrasi.go.id/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> ~$35-50 • 60 days • <strong>Processing:</strong> 2-5 days | <strong>VoA:</strong> $35, immediate at select airports</p>
                 </div>
                 
                 <div class="country-card" data-country="iran">
@@ -762,6 +847,7 @@
                         <li><a href="https://www.mofa.gov.jo/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://eservices.moi.gov.jo/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> ~$57 • 3 months • <strong>Processing:</strong> 3-5 days | <strong>VoA:</strong> 40 JOD (~$56), immediate at Amman airport</p>
                 </div>
                 
                 <div class="country-card" data-country="kazakhstan">
@@ -792,6 +878,7 @@
                     <ul class="visa-links">
                         <li><a href="https://laoevisa.gov.la/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> ~$50 • 60 days • <strong>Processing:</strong> 3 business days | <strong>VoA:</strong> $30-42, immediate at airports/borders</p>
                 </div>
                 
                 <div class="country-card" data-country="malaysia">
@@ -801,6 +888,16 @@
                         <li><a href="https://malaysiavisa.imi.gov.my/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                         <li><a href="https://imigresen-online.imi.gov.my/mdac/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
                     </ul>
+                    <p class="visa-info"><strong>Visa-free:</strong> 90 days (US/EU/UK) • MDAC required | <strong>E-Visa:</strong> ~$25, 3-5 days processing</p>
+                </div>
+                
+                <div class="country-card" data-country="maldives">
+                    <h3><span class="country-flag">🇲🇻</span> Maldives</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.immigration.gov.mv/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Authority</a></li>
+                        <li><a href="https://imuga.immigration.gov.mv/" class="arrival" target="_blank"><span class="icon">📱</span> IMUGA Arrival Card</a></li>
+                    </ul>
+                    <p class="visa-info"><strong>VoA:</strong> FREE • 30 days (extendable to 90) • <strong>Processing:</strong> Immediate at airport | Complete IMUGA within 96h before travel</p>
                 </div>
                 
                 <div class="country-card" data-country="mongolia">
@@ -823,6 +920,7 @@
                         <li><a href="https://www.nepalimmigration.gov.np/" class="official" target="_blank"><span class="icon">🏛️</span> Department of Immigration</a></li>
                         <li><a href="https://nepaliport.immigration.gov.np/" class="evisa" target="_blank"><span class="icon">💻</span> Online Visa</a></li>
                     </ul>
+                    <p class="visa-info"><strong>VoA:</strong> $30 (30 days) / $50 (90 days) • <strong>Processing:</strong> Immediate at Kathmandu airport (allow 30-60 min)</p>
                 </div>
                 
                 <div class="country-card" data-country="oman">
@@ -854,6 +952,7 @@
                         <li><a href="https://www.mofa.gov.qa/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.hayya.qa/" class="evisa" target="_blank"><span class="icon">💻</span> Hayya Platform</a></li>
                     </ul>
+                    <p class="visa-info"><strong>Visa-free:</strong> 30-90 days (50+ countries) | <strong>E-Visa:</strong> ~$27, <strong>Processing:</strong> 2-5 days | <strong>VoA:</strong> Available for eligible nationalities</p>
                 </div>
                 
                 <div class="country-card" data-country="saudi arabia,ksa">
@@ -887,6 +986,7 @@
                     <ul class="visa-links">
                         <li><a href="http://www.eta.gov.lk/" class="evisa" target="_blank"><span class="icon">💻</span> ETA Application</a></li>
                     </ul>
+                    <p class="visa-info"><strong>ETA:</strong> ~$50 • 30 days • <strong>Processing:</strong> 24-48 hours (can be instant) | <strong>VoA:</strong> Available at Colombo airport</p>
                 </div>
                 
                 <div class="country-card" data-country="taiwan">
@@ -910,7 +1010,7 @@
                         <li><a href="https://www.thaievisa.go.th/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                         <li><a href="https://tdac.immigration.go.th/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
                     </ul>
-                    <p class="visa-info"><strong>Visa-free:</strong> 60 days (US/EU/UK) • TDAC required</p>
+                    <p class="visa-info"><strong>Visa-free:</strong> 60 days (US/EU/UK) • TDAC required | <strong>VoA:</strong> 2,000 THB (~$60), 15 days, immediate at airports</p>
                 </div>
                 
                 <div class="country-card" data-country="uae,united arab emirates">
@@ -919,6 +1019,7 @@
                         <li><a href="https://u.ae/" class="official" target="_blank"><span class="icon">🏛️</span> UAE Government Portal</a></li>
                         <li><a href="https://smartservices.ica.gov.ae/" class="evisa" target="_blank"><span class="icon">💻</span> ICA Smart Services</a></li>
                     </ul>
+                    <p class="visa-info"><strong>Visa-free:</strong> 30-90 days (many nationalities) | <strong>E-Visa:</strong> ~$80-150, <strong>Processing:</strong> 2-4 days | <strong>VoA:</strong> Available for US/EU/UK passport holders (30 days, free)</p>
                 </div>
                 
                 <div class="country-card" data-country="uzbekistan">
@@ -933,7 +1034,7 @@
                     <ul class="visa-links">
                         <li><a href="https://evisa.gov.vn/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
-                    <p class="visa-info"><strong>E-Visa:</strong> $25-50 • 90 days • Single/Multiple</p>
+                    <p class="visa-info"><strong>E-Visa:</strong> $25-50 • 90 days • <strong>Processing:</strong> 3-5 business days | <strong>VoA:</strong> Letter required, $25 stamping fee at airport</p>
                 </div>
             </div>
         </section>
@@ -955,7 +1056,7 @@
                     <ul class="visa-links">
                         <li><a href="https://visa2egypt.gov.eg/eVisa/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
                     </ul>
-                    <p class="visa-info"><strong>E-Visa:</strong> $25-60 • 90 days • 30 days stay</p>
+                    <p class="visa-info"><strong>E-Visa:</strong> $25-60 • 90 days • <strong>Processing:</strong> 5-7 days | <strong>VoA:</strong> $25, immediate at Cairo airport (bring exact change)</p>
                 </div>
                 
                 <div class="country-card" data-country="kenya">
@@ -964,7 +1065,7 @@
                         <li><a href="https://www.immigration.go.ke/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Service</a></li>
                         <li><a href="https://etakenya.go.ke/" class="arrival" target="_blank"><span class="icon">📱</span> eTA Authorization</a></li>
                     </ul>
-                    <p class="visa-info"><strong>eTA:</strong> ~$35 • 90 days • Required for all</p>
+                    <p class="visa-info"><strong>eTA:</strong> ~$35 • 90 days • <strong>Processing:</strong> 2-3 days (apply before travel) | <strong>VoA:</strong> $51, immediate at Nairobi airport</p>
                 </div>
                 
                 <div class="country-card" data-country="nigeria">
@@ -1005,6 +1106,7 @@
                         <li><a href="https://www.immigration.go.tz/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Department</a></li>
                         <li><a href="https://eservices.immigration.go.tz/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> $50-100 • <strong>Processing:</strong> 10-15 days | <strong>VoA:</strong> $50-100, immediate at airports (US citizens eligible)</p>
                 </div>
                 
                 <div class="country-card" data-country="uganda">
@@ -1012,6 +1114,7 @@
                     <ul class="visa-links">
                         <li><a href="https://visas.immigration.go.ug/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> $50 • 90 days • <strong>Processing:</strong> 3-5 days | <strong>VoA:</strong> $50, immediate at Entebbe airport</p>
                 </div>
                 
                 <div class="country-card" data-country="rwanda">
@@ -1020,6 +1123,7 @@
                         <li><a href="https://www.minaffet.gov.rw/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://irembo.gov.rw/" class="evisa" target="_blank"><span class="icon">💻</span> Irembo E-Visa</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> $50 • 30 days • <strong>Processing:</strong> 3-5 days | <strong>VoA:</strong> $50, immediate at Kigali airport</p>
                 </div>
                 
                 <div class="country-card" data-country="botswana">
@@ -1035,6 +1139,24 @@
                     <ul class="visa-links">
                         <li><a href="https://www.mha.gov.na/" class="official" target="_blank"><span class="icon">🏛️</span> Home Affairs</a></li>
                     </ul>
+                    <p class="visa-info"><strong>Visa-free:</strong> 90 days (US/EU/UK) • <strong>Processing:</strong> N/A</p>
+                </div>
+                
+                <div class="country-card" data-country="seychelles">
+                    <h3><span class="country-flag">🇸🇨</span> Seychelles</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://www.mofa.gov.sc/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://eservices.immigration.gov.sc/" class="arrival" target="_blank"><span class="icon">📱</span> Travel Authorization</a></li>
+                    </ul>
+                    <p class="visa-info"><strong>VoA:</strong> FREE • 30 days (extendable to 90) • <strong>Processing:</strong> Immediate | Complete Travel Authorization before travel (free)</p>
+                </div>
+                
+                <div class="country-card" data-country="mauritius">
+                    <h3><span class="country-flag">🇲🇺</span> Mauritius</h3>
+                    <ul class="visa-links">
+                        <li><a href="https://passport.govmu.org/" class="official" target="_blank"><span class="icon">🏛️</span> Passport & Immigration</a></li>
+                    </ul>
+                    <p class="visa-info"><strong>Visa-free:</strong> 90 days (US/EU/UK) • <strong>Processing:</strong> N/A | VoA available for other nationalities</p>
                 </div>
                 
                 <div class="country-card" data-country="zimbabwe">
@@ -1042,6 +1164,7 @@
                     <ul class="visa-links">
                         <li><a href="https://www.evisa.gov.zw/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> $30-55 • <strong>Processing:</strong> 5-10 days | <strong>VoA:</strong> $30-55, immediate at Victoria Falls/Harare airports</p>
                 </div>
                 
                 <div class="country-card" data-country="zambia">
@@ -1050,6 +1173,7 @@
                         <li><a href="https://www.zambiaimmigration.gov.zm/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Department</a></li>
                         <li><a href="https://www.zambiaimmigration.gov.zm/evisa" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
+                    <p class="visa-info"><strong>E-Visa:</strong> $50 • <strong>Processing:</strong> 3-5 days | <strong>VoA:</strong> $50, immediate at Lusaka airport | KAZA Univisa: $50 (Zambia+Zimbabwe)</p>
                 </div>
                 
                 <div class="country-card" data-country="senegal">
@@ -1393,6 +1517,96 @@
             </div>
         </section>
 
+        <div class="region-section" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b;">
+            <h2 style="border-bottom-color: #f59e0b;">🛂 Visa on Arrival (VoA) - Quick Reference</h2>
+            <p style="margin-bottom: 20px; font-size: 1.05em;">Countries where US/EU/UK passport holders can get a visa <strong>upon arrival</strong> at the airport/border:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇦🇪 UAE</strong> – Free, 30 days (US/EU/UK)
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇧🇭 Bahrain</strong> – ~$15, 14 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇰🇭 Cambodia</strong> – $30, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇪🇬 Egypt</strong> – $25, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇮🇩 Indonesia</strong> – $35, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇯🇴 Jordan</strong> – 40 JOD (~$56), 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇰🇪 Kenya</strong> – $51, 90 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇰🇼 Kuwait</strong> – ~$10, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇱🇦 Laos</strong> – $30-42, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇱🇧 Lebanon</strong> – Free, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇲🇻 Maldives</strong> – FREE, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇲🇺 Mauritius</strong> – FREE, 90 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇳🇵 Nepal</strong> – $30-50, 30-90 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇴🇲 Oman</strong> – ~$15-25, 14-30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇶🇦 Qatar</strong> – Free (eligible nationalities)
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇷🇼 Rwanda</strong> – $50, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇸🇨 Seychelles</strong> – FREE, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇱🇰 Sri Lanka</strong> – ~$50, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇹🇿 Tanzania</strong> – $50-100, 90 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇹🇭 Thailand</strong> – 2,000 THB (~$60), 15 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇹🇱 Timor-Leste</strong> – $30, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇹🇬 Togo</strong> – ~$35, 7 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇺🇬 Uganda</strong> – $50, 90 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇻🇳 Vietnam</strong> – $25 stamping (letter required)
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇿🇼 Zimbabwe</strong> – $30-55, 30 days
+                </div>
+                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                    <strong>🇿🇲 Zambia</strong> – $50, 90 days
+                </div>
+            </div>
+            
+            <div class="note" style="margin-top: 20px; background: rgba(255,255,255,0.7); border-color: #f59e0b;">
+                <strong>⚠️ Important:</strong> VoA availability depends on your nationality. Always carry: (1) Passport valid 6+ months, (2) Return/onward ticket, (3) Proof of accommodation, (4) Exact cash in USD/local currency. Some airports only accept cash!
+            </div>
+        </div>
+
         <footer>
             <p>⚠️ <strong>Disclaimer:</strong> Visa requirements change frequently. Always verify with official government sources before travel.</p>
             <p>This guide provides links to official government visa websites only. We are not affiliated with any government agency.</p>
@@ -1404,6 +1618,196 @@
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
         const countryCards = document.querySelectorAll('.country-card');
+        const regionNav = document.querySelector('.region-nav');
+        const regionSections = document.querySelectorAll('.region-section');
+        const citizenshipSelect = document.getElementById('citizenshipSelect');
+        
+        // Visa requirements by citizenship (us, eu, cn, jp)
+        // free = visa-free, evisa = e-visa available, voa = visa on arrival, eta = eta required, required = embassy visa required
+        const visaRequirements = {
+            // North America
+            'united states': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'canada': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'greenland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            // Europe (Schengen - free for US/EU/JP, required for CN)
+            'austria': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'belgium': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'bulgaria': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'croatia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'cyprus': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'czech republic': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'denmark': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'estonia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'finland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'france': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'germany': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'greece': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'hungary': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'iceland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'italy': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'latvia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'lithuania': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'luxembourg': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'malta': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'netherlands': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'norway': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'poland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'portugal': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'romania': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'slovakia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'slovenia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'spain': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'sweden': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'switzerland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'united kingdom': { us: 'eta', eu: 'free', cn: 'required', jp: 'eta' },
+            'ireland': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'moldova': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'russia': { us: 'required', eu: 'required', cn: 'free', jp: 'evisa' },
+            'turkey': { us: 'evisa', eu: 'free', cn: 'evisa', jp: 'free' },
+            // Asia
+            'armenia': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'free' },
+            'azerbaijan': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'evisa' },
+            'bahrain': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'bangladesh': { us: 'voa', eu: 'voa', cn: 'free', jp: 'voa' },
+            'cambodia': { us: 'voa', eu: 'voa', cn: 'free', jp: 'voa' },
+            'china': { us: 'required', eu: 'required', cn: 'free', jp: 'free' },
+            'georgia': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'india': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'indonesia': { us: 'voa', eu: 'voa', cn: 'free', jp: 'free' },
+            'iran': { us: 'required', eu: 'voa', cn: 'free', jp: 'voa' },
+            'iraq': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'israel': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'japan': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'jordan': { us: 'voa', eu: 'voa', cn: 'voa', jp: 'voa' },
+            'kazakhstan': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'kuwait': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'kyrgyzstan': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'evisa' },
+            'laos': { us: 'voa', eu: 'voa', cn: 'free', jp: 'voa' },
+            'malaysia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'maldives': { us: 'voa', eu: 'voa', cn: 'voa', jp: 'voa' },
+            'mongolia': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'myanmar': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'evisa' },
+            'nepal': { us: 'voa', eu: 'voa', cn: 'free', jp: 'voa' },
+            'oman': { us: 'voa', eu: 'voa', cn: 'evisa', jp: 'voa' },
+            'pakistan': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'evisa' },
+            'philippines': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'qatar': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'saudi arabia': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'singapore': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'south korea': { us: 'eta', eu: 'eta', cn: 'required', jp: 'free' },
+            'sri lanka': { us: 'voa', eu: 'voa', cn: 'voa', jp: 'voa' },
+            'taiwan': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'tajikistan': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'evisa' },
+            'thailand': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'uae': { us: 'free', eu: 'free', cn: 'voa', jp: 'free' },
+            'uzbekistan': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'vietnam': { us: 'evisa', eu: 'evisa', cn: 'free', jp: 'free' },
+            // Africa
+            'south africa': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'egypt': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'kenya': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'nigeria': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'morocco': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'ethiopia': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'ghana': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'tanzania': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'uganda': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'rwanda': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'botswana': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'namibia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'seychelles': { us: 'voa', eu: 'voa', cn: 'voa', jp: 'voa' },
+            'mauritius': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'zimbabwe': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'zambia': { us: 'voa', eu: 'voa', cn: 'required', jp: 'voa' },
+            'senegal': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'tunisia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            // Oceania
+            'australia': { us: 'eta', eu: 'eta', cn: 'required', jp: 'eta' },
+            'new zealand': { us: 'eta', eu: 'eta', cn: 'required', jp: 'eta' },
+            'fiji': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'papua new guinea': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'samoa': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'tonga': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'vanuatu': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            // Caribbean
+            'bahamas': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'jamaica': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'dominican republic': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'barbados': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'st lucia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'antigua and barbuda': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'grenada': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'dominica': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'st vincent': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'aruba': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'curacao': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'cayman islands': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'bermuda': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            // Latin America
+            'argentina': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'bolivia': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'brazil': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'chile': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'colombia': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'costa rica': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'cuba': { us: 'required', eu: 'required', cn: 'free', jp: 'required' },
+            'ecuador': { us: 'free', eu: 'free', cn: 'free', jp: 'free' },
+            'el salvador': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'guatemala': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'honduras': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'mexico': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'nicaragua': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'panama': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'paraguay': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'peru': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'suriname': { us: 'evisa', eu: 'evisa', cn: 'required', jp: 'evisa' },
+            'trinidad': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'uruguay': { us: 'free', eu: 'free', cn: 'required', jp: 'free' },
+            'venezuela': { us: 'required', eu: 'required', cn: 'free', jp: 'required' }
+        };
+
+        const requirementLabels = {
+            'free': { text: 'Visa-Free', class: 'badge-free' },
+            'evisa': { text: 'E-Visa', class: 'badge-evisa' },
+            'voa': { text: 'Visa on Arrival', class: 'badge-voa' },
+            'eta': { text: 'eTA Required', class: 'badge-eta' },
+            'required': { text: 'Visa Required', class: 'badge-required' }
+        };
+
+        function updateCitizenshipFilter() {
+            const selectedCitizenship = citizenshipSelect.value;
+            
+            countryCards.forEach(card => {
+                const dataCountry = card.getAttribute('data-country');
+                const countryName = card.querySelector('h3').textContent.toLowerCase().replace(/^[^\s]+\s/, '').trim();
+                
+                // Find matching requirement
+                let requirement = null;
+                for (const [key, reqs] of Object.entries(visaRequirements)) {
+                    if (dataCountry.includes(key) || countryName.includes(key)) {
+                        requirement = reqs[selectedCitizenship];
+                        break;
+                    }
+                }
+                
+                // Remove existing badge
+                const existingBadge = card.querySelector('.visa-requirement-badge');
+                if (existingBadge) existingBadge.remove();
+                
+                // Add new badge if we have a requirement
+                if (requirement && requirementLabels[requirement]) {
+                    const h3 = card.querySelector('h3');
+                    const badge = document.createElement('span');
+                    badge.className = `visa-requirement-badge ${requirementLabels[requirement].class}`;
+                    badge.textContent = requirementLabels[requirement].text;
+                    h3.appendChild(badge);
+                }
+            });
+        }
+
+        // Initialize citizenship filter
+        citizenshipSelect.addEventListener('change', updateCitizenshipFilter);
+        updateCitizenshipFilter();
 
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase().trim();
@@ -1411,8 +1815,13 @@
             if (query.length === 0) {
                 searchResults.style.display = 'none';
                 countryCards.forEach(card => card.classList.remove('hidden'));
+                regionSections.forEach(section => section.classList.remove('hidden'));
+                if (regionNav) regionNav.style.display = 'flex';
                 return;
             }
+
+            // Hide region navigation when searching
+            if (regionNav) regionNav.style.display = 'none';
 
             const results = [];
             
@@ -1441,6 +1850,12 @@
                 countryCards.forEach(card => {
                     const isVisible = results.some(r => r.card === card);
                     card.classList.toggle('hidden', !isVisible);
+                });
+
+                // Hide region sections that have no visible countries
+                regionSections.forEach(section => {
+                    const visibleCards = section.querySelectorAll('.country-card:not(.hidden)');
+                    section.classList.toggle('hidden', visibleCards.length === 0);
                 });
 
                 searchResults.querySelectorAll('.search-result-item').forEach(item => {
