@@ -70,13 +70,6 @@ Each country card includes up to three types of links:
 - **Hover Effects** - Interactive card animations
 - **External Links** - All links open in new tabs
 
-## ⚠️ Important Notes
-
-1. **Verify Before Travel** - Visa requirements change frequently. Always confirm with official sources.
-2. **ETIAS (Europe)** - Starting 2026, visa-exempt travelers to Schengen countries need ETIAS authorization.
-3. **Fraud Warning** - Only use official government websites (.gov, .gov.xx, official ministry domains). Beware of third-party sites charging extra fees.
-4. **Processing Times** - E-visa processing varies from instant to several weeks depending on country.
-
 ## 📝 Maintenance
 
 To update the website:
@@ -101,4 +94,4 @@ Free to use and modify for personal or commercial purposes.
 
 ---
 
-**Last Updated:** March 2026
+**Last Updated:** May 2026

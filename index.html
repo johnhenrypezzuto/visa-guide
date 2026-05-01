@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Visa Guide - Official Government Visa Websites</title>
+    <title>Global Visa Guide - Official Visa & Arrival Card Links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --secondary: #8b5cf6;
-            --accent: #06b6d4;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --dark: #1e293b;
-            --gray: #64748b;
-            --light: #f1f5f9;
+            --ink: #172033;
+            --muted: #5f6b7a;
+            --subtle: #7c8794;
+            --line: #d9e0e8;
+            --line-strong: #c6cfdb;
+            --surface: #f6f8fb;
+            --surface-alt: #eef3f8;
             --white: #ffffff;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
+            --primary: #1f5f8b;
+            --primary-dark: #16476a;
+            --success: #247a5a;
+            --accent: #256f9c;
+            --warning: #9a6a16;
+            --danger: #a33d3d;
+            --shadow-sm: 0 1px 2px rgba(23, 32, 51, 0.06);
+            --shadow-md: 0 12px 28px rgba(23, 32, 51, 0.08);
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            line-height: 1.5;
+            color: var(--ink);
+            background: var(--surface);
             min-height: 100vh;
-            padding-bottom: 40px;
+            overflow-x: hidden;
         }
         
-        .container { max-width: 1400px; margin: 0 auto; padding: 30px 20px; }
+        .container { width: 100%; max-width: 1320px; margin: 0 auto; padding: 24px; }
         
         header {
-            text-align: center;
-            padding: 50px 30px;
-            background: rgba(255,255,255,0.98);
-            border-radius: 24px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow-xl);
+            padding: 36px 40px;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            margin-bottom: 22px;
+            box-shadow: var(--shadow-sm);
             position: relative;
         }
         
@@ -55,77 +56,77 @@
             right: 20px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
         
         .citizenship-selector label {
             font-weight: 600;
-            color: var(--gray);
-            font-size: 0.9em;
+            color: var(--muted);
+            font-size: 0.86rem;
         }
         
         .citizenship-selector select {
-            padding: 10px 16px;
-            font-size: 0.95em;
-            border: 2px solid var(--light);
-            border-radius: 12px;
+            padding: 9px 12px;
+            font-size: 0.92rem;
+            border: 1px solid var(--line-strong);
+            border-radius: 8px;
             outline: none;
             cursor: pointer;
             background: var(--white);
-            font-weight: 500;
+            color: var(--ink);
+            font-weight: 600;
             transition: all 0.2s;
         }
         
         .citizenship-selector select:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            box-shadow: 0 0 0 3px rgba(31, 95, 139, 0.14);
         }
         
         .visa-requirement-badge {
             display: inline-block;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.75em;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-size: 0.68rem;
             font-weight: 700;
-            margin-left: 8px;
+            margin-left: auto;
             text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
         
-        .badge-free { background: #d1fae5; color: #065f46; }
-        .badge-evisa { background: #cffafe; color: #164e63; }
-        .badge-voa { background: #fef3c7; color: #92400e; }
-        .badge-eta { background: #e0e7ff; color: #3730a3; }
-        .badge-required { background: #fee2e2; color: #991b1b; }
+        .badge-free { background: #e4f4ed; color: #176346; }
+        .badge-evisa { background: #e2f0f7; color: #175a80; }
+        .badge-voa { background: #fbefd7; color: #7f5410; }
+        .badge-eta { background: #e8edf7; color: #334e7b; }
+        .badge-required { background: #f7e4e4; color: #873232; }
         
         h1 {
-            font-size: 3em;
+            font-size: clamp(2rem, 4vw, 3.15rem);
             font-weight: 800;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin-bottom: 8px;
+            color: var(--ink);
+            letter-spacing: 0;
         }
         
-        .subtitle { color: var(--gray); font-size: 1.15em; margin-bottom: 30px; }
+        .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 26px; max-width: 720px; }
         
-        .search-container { max-width: 600px; margin: 30px auto; position: relative; }
+        .search-container { max-width: 680px; position: relative; }
         
         #searchInput {
             width: 100%;
-            padding: 18px 28px;
-            font-size: 1.1em;
-            border: 2px solid var(--light);
-            border-radius: 50px;
+            padding: 14px 16px;
+            font-size: 1rem;
+            border: 1px solid var(--line-strong);
+            border-radius: 8px;
             outline: none;
             transition: all 0.3s;
             background: var(--white);
-            box-shadow: var(--shadow-md);
+            color: var(--ink);
         }
         
         #searchInput:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+            box-shadow: 0 0 0 3px rgba(31, 95, 139, 0.14);
         }
         
         #searchResults {
@@ -134,230 +135,247 @@
             top: 100%;
             left: 0; right: 0;
             background: var(--white);
-            border-radius: 16px;
-            box-shadow: var(--shadow-xl);
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
             max-height: 400px;
             overflow-y: auto;
             z-index: 1000;
-            margin-top: 12px;
-            border: 1px solid var(--light);
+            margin-top: 8px;
+            border: 1px solid var(--line);
         }
         
         .search-result-item {
-            padding: 14px 24px;
-            border-bottom: 1px solid var(--light);
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--line);
             cursor: pointer;
             transition: all 0.2s;
         }
         
-        .search-result-item:hover { background: rgba(99, 102, 241, 0.05); color: var(--primary); }
+        .search-result-item:hover { background: var(--surface-alt); color: var(--primary); }
         .search-result-item:last-child { border-bottom: none; }
         
         .region-nav {
             display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 40px;
+            gap: 8px;
+            margin-bottom: 22px;
             flex-wrap: wrap;
             position: sticky;
-            top: 20px;
+            top: 12px;
             z-index: 100;
+            padding: 10px;
+            background: rgba(246, 248, 251, 0.92);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--line);
+            border-radius: 10px;
         }
         
         .region-nav a {
-            background: rgba(255,255,255,0.95);
+            background: var(--white);
             color: var(--primary);
-            padding: 14px 24px;
-            border-radius: 50px;
+            padding: 9px 13px;
+            border: 1px solid var(--line);
+            border-radius: 7px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.3s;
-            box-shadow: var(--shadow-md);
         }
         
         .region-nav a:hover {
-            background: var(--primary);
-            color: var(--white);
-            transform: translateY(-3px);
+            background: #eaf2f8;
+            border-color: #bfd3e3;
+            color: var(--primary-dark);
         }
         
         .legend {
             display: flex;
-            justify-content: center;
-            gap: 24px;
+            gap: 18px;
             flex-wrap: wrap;
-            margin-bottom: 30px;
-            padding: 20px 30px;
-            background: rgba(255,255,255,0.95);
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
+            margin-bottom: 18px;
+            padding: 16px 18px;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 10px;
         }
         
-        .legend-item { display: flex; align-items: center; gap: 10px; font-size: 0.9em; font-weight: 500; }
-        .legend-color { width: 18px; height: 18px; border-radius: 6px; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.87rem; font-weight: 600; color: var(--muted); }
+        .legend-color { width: 10px; height: 10px; border-radius: 999px; }
+        .legend-color--official { background: var(--success); }
+        .legend-color--evisa { background: var(--accent); }
+        .legend-color--arrival { background: var(--warning); }
+        .legend-color--voa { background: var(--danger); }
         
         .note {
-            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-            border: 1px solid var(--warning);
-            border-radius: 16px;
-            padding: 20px 25px;
-            margin-top: 25px;
-            font-size: 0.95em;
-            color: #92400e;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-top: 18px;
+            font-size: 0.93rem;
+            color: var(--muted);
         }
-        .note a { color: var(--primary); font-weight: 600; }
-        
+
+        .note strong { color: var(--ink); }
+        .note a { color: var(--primary); font-weight: 700; }
+        .note ul { margin-top: 8px; margin-left: 20px; }
         .region-section {
-            background: rgba(255,255,255,0.98);
-            border-radius: 24px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow-xl);
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
         }
         
         .region-section h2 {
-            color: var(--dark);
-            font-size: 2.2em;
+            color: var(--ink);
+            font-size: 1.38rem;
             font-weight: 700;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid var(--primary);
+            margin-bottom: 22px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line);
+            letter-spacing: 0;
         }
         
         .country-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
         }
         
         .country-card {
             background: var(--white);
-            border-radius: 20px;
-            padding: 24px;
-            border: 2px solid var(--light);
+            border-radius: 8px;
+            padding: 18px;
+            border: 1px solid var(--line);
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
         }
-        
-        .country-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
+
         .country-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: var(--shadow-md);
+            border-color: var(--line-strong);
         }
         
-        .country-card:hover::before { opacity: 1; }
         .country-card.hidden { display: none; }
         .region-section.hidden { display: none; }
         
         .country-card h3 {
-            color: var(--dark);
-            font-size: 1.4em;
+            color: var(--ink);
+            font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 18px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        
-        @media (max-width: 480px) {
-            .citizenship-selector {
-                position: static;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
-        }
-        
-        .country-flag { font-size: 1.8em; }
-        
-        .visa-info {
-            font-size: 0.9em;
-            background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
-            padding: 12px 16px;
-            border-radius: 12px;
-            margin-top: 16px;
-            border-left: 4px solid var(--accent);
-            font-weight: 500;
-        }
-        
-        .visa-info strong { color: var(--primary); }
-        
-        .visa-links { list-style: none; }
-        .visa-links li { margin-bottom: 10px; }
-        
-        .visa-links a {
-            color: var(--primary);
-            text-decoration: none;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 12px 16px;
-            background: var(--light);
-            border-radius: 12px;
-            transition: all 0.2s;
+            flex-wrap: wrap;
+        }
+
+        .country-flag { font-size: 1.35rem; line-height: 1; }
+        
+        .visa-info {
+            font-size: 0.86rem;
+            background: var(--surface);
+            padding: 11px 12px;
+            border-radius: 7px;
+            margin-top: 12px;
+            border: 1px solid var(--line);
             font-weight: 500;
-            border-left: 4px solid transparent;
+            color: var(--muted);
+        }
+        
+        .visa-info strong { color: var(--ink); }
+        
+        .visa-links { list-style: none; }
+        .visa-links li { margin-bottom: 8px; }
+        
+        .visa-links a {
+            color: var(--ink);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+            border-radius: 7px;
+            transition: all 0.2s;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid var(--line);
         }
         
         .visa-links a:hover {
-            transform: translateX(4px);
-            color: var(--white);
+            background: #eaf2f8;
+            border-color: #bfd3e3;
+            color: var(--primary-dark);
         }
         
-        .visa-links .official { border-left-color: var(--success); }
-        .visa-links .official:hover { background: var(--success); }
+        .visa-links .official { border-left: 3px solid var(--success); }
+        .visa-links .evisa { border-left: 3px solid var(--accent); }
+        .visa-links .arrival { border-left: 3px solid var(--warning); }
         
-        .visa-links .evisa { border-left-color: var(--accent); }
-        .visa-links .evisa:hover { background: var(--accent); }
+        .icon { font-size: 1rem; min-width: 1.3em; text-align: center; opacity: 0.78; }
         
-        .visa-links .arrival { border-left-color: var(--warning); }
-        .visa-links .arrival:hover { background: var(--warning); }
-        
-        .icon { font-size: 1.2em; min-width: 1.6em; text-align: center; }
+        .voa-section { background: #fffaf0; border-color: #ead7b7; }
+        .voa-section h2 { border-bottom-color: #ead7b7; }
+        .voa-intro { margin-bottom: 18px; color: var(--muted); font-size: 0.98rem; }
+        .voa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+        .voa-item { background: var(--white); padding: 11px 13px; border: 1px solid #ead7b7; border-radius: 7px; color: var(--muted); font-size: 0.92rem; }
+        .voa-item strong { color: var(--ink); }
         
         footer {
-            text-align: center;
-            padding: 50px 30px;
-            color: rgba(255,255,255,0.95);
-            margin-top: 60px;
+            padding: 28px 6px 12px;
+            color: var(--muted);
+            margin-top: 24px;
+            font-size: 0.9rem;
         }
         
-        footer a { color: var(--white); text-decoration: none; font-weight: 600; }
+        footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
         footer p { margin-bottom: 12px; }
+        .footer-meta { margin-top: 15px; color: var(--subtle); }
         
         @media (max-width: 768px) {
-            h1 { font-size: 2.2em; }
-            .country-grid { grid-template-columns: 1fr; }
-            .region-section { padding: 25px 20px; }
-            .region-nav a { padding: 10px 18px; font-size: 0.85em; }
+            .container { padding: 14px; }
+            header { padding: 26px 20px; }
+            .country-grid { grid-template-columns: minmax(0, 1fr); }
+            .country-card { min-width: 0; }
+            .country-card h3 { align-items: flex-start; }
+            .visa-requirement-badge { margin-left: 0; }
+            .region-section { padding: 20px; }
+            .region-nav { position: static; }
+            .region-nav a { padding: 8px 10px; font-size: 0.84rem; }
+            .legend { display: grid; grid-template-columns: 1fr; gap: 12px; }
+            .legend-item,
+            .visa-links a,
+            .visa-info,
+            .subtitle,
+            .note {
+                overflow-wrap: anywhere;
+            }
+            .citizenship-selector {
+                position: static;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+            }
         }
         
         html { scroll-behavior: smooth; }
         
         ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: var(--light); border-radius: 10px; }
-        ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: 10px; }
+        ::-webkit-scrollbar-track { background: var(--surface); }
+        ::-webkit-scrollbar-thumb { background: #bdc8d5; border-radius: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🌍 Global Visa Guide</h1>
-            <p class="subtitle">Official Government Visa & E-Visa Websites Only</p>
+            <h1>Global Visa Guide</h1>
+            <p class="subtitle">Official Government Visa, E-Visa & Digital Arrival Card Links</p>
             
             <div class="citizenship-selector">
-                <label for="citizenshipSelect">🛂 Your Passport:</label>
+                <label for="citizenshipSelect">Passport:</label>
                 <select id="citizenshipSelect">
                     <option value="us">🇺🇸 United States</option>
                     <option value="eu">🇪🇺 European Union</option>
@@ -367,57 +385,43 @@
             </div>
             
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search for a country..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Search for a country..." autocomplete="off">
                 <div id="searchResults"></div>
             </div>
         </header>
         
         <nav class="region-nav">
-            <a href="#north-america">🌎 North America</a>
-            <a href="#europe">🇪🇺 Europe</a>
-            <a href="#asia">🌏 Asia</a>
-            <a href="#africa">🌍 Africa</a>
-            <a href="#oceania">🌏 Oceania</a>
-            <a href="#caribbean">🏝️ Caribbean</a>
-            <a href="#latin-america">🌎 Latin America</a>
+            <a href="#north-america">North America</a>
+            <a href="#europe">Europe</a>
+            <a href="#asia">Asia</a>
+            <a href="#africa">Africa</a>
+            <a href="#oceania">Oceania</a>
+            <a href="#caribbean">Caribbean</a>
+            <a href="#latin-america">Latin America</a>
         </nav>
         
         <div class="legend">
             <div class="legend-item">
-                <div class="legend-color" style="background: #10b981;"></div>
+                <div class="legend-color legend-color--official"></div>
                 <span>Official Government Visa Website</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background: #06b6d4;"></div>
+                <div class="legend-color legend-color--evisa"></div>
                 <span>Official E-Visa Portal</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background: #f59e0b;"></div>
+                <div class="legend-color legend-color--arrival"></div>
                 <span>Official Digital Arrival Card</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background: #ef4444;"></div>
+                <div class="legend-color legend-color--voa"></div>
                 <span>Visa on Arrival Available</span>
             </div>
         </div>
         
-        <div class="note" style="background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%); border-color: #06b6d4; color: #164e63;">
-            <strong>💰 Visa Fees & Duration:</strong> Costs and validity shown are <strong>approximate</strong> for US/EU/UK passport holders. Fees vary by nationality and visa type. <strong>Always verify on official government sites before applying.</strong> Third-party sites often charge 2-5x official fees.
-        </div>
-
-        <div class="note" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-color: #f59e0b; color: #92400e; margin-top: 15px;">
-            <strong>⏱️ Visa Processing Times (Approximate):</strong>
-            <ul style="margin-top: 8px; margin-left: 20px;">
-                <li><strong>E-Visa:</strong> 1-5 business days (most common: 2-3 days)</li>
-                <li><strong>Visa on Arrival (VoA):</strong> Immediate at airport (allow 30-60 min for queues)</li>
-                <li><strong>Embassy Visa:</strong> 5-15 business days (varies by country)</li>
-                <li><strong>ETA/eTA:</strong> Instant to 72 hours (most approved within minutes)</li>
-            </ul>
-        </div>
-
         <!-- NORTH AMERICA -->
         <section id="north-america" class="region-section">
-            <h2>🌎 North America</h2>
+            <h2>North America</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="united states,usa,america">
                     <h3><span class="country-flag">🇺🇸</span> United States</h3>
@@ -450,7 +454,7 @@
 
         <!-- EUROPE -->
         <section id="europe" class="region-section">
-            <h2>🇪🇺 Europe</h2>
+            <h2>Europe</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="austria">
                     <h3><span class="country-flag">🇦🇹</span> Austria</h3>
@@ -723,13 +727,13 @@
             </div>
             
             <div class="note">
-                <strong>📌 Schengen/ETIAS:</strong> 29 countries with common visa rules. Starting 2026, visa-exempt travelers need <strong>ETIAS</strong> (€20, 3 years, 90/180 days). Official: <a href="https://travel-europe.europa.eu/etias_en" target="_blank">travel-europe.europa.eu/etias_en</a>. Beware of fraudulent sites!
+                <strong>Schengen/ETIAS:</strong> 29 countries with common visa rules. Starting 2026, visa-exempt travelers need <strong>ETIAS</strong> (€20, 3 years, 90/180 days). Official: <a href="https://travel-europe.europa.eu/etias_en" target="_blank">travel-europe.europa.eu/etias_en</a>.
             </div>
         </section>
 
         <!-- ASIA -->
         <section id="asia" class="region-section">
-            <h2>🌏 Asia</h2>
+            <h2>Asia</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="armenia">
                     <h3><span class="country-flag">🇦🇲</span> Armenia</h3>
@@ -777,7 +781,7 @@
                     <h3><span class="country-flag">🇨🇳</span> China</h3>
                     <ul class="visa-links">
                         <li><a href="https://www.mfa.gov.cn/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
-                        <li><a href="https://cova.mfa.gov.cn/qzCoCommonController.do?show&pageId=index&locale=en_US" class="evisa" target="_blank"><span class="icon">💻</span> COVA Visa Application</a></li>
+                        <li><a href="https://cova.mfa.gov.cn/qzCoCommonController.do?show&amp;pageId=index&amp;locale=en_US" class="evisa" target="_blank"><span class="icon">💻</span> COVA Visa Application</a></li>
                         <li><a href="https://www.visaforchina.cn/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Application Center</a></li>
                     </ul>
                     <p class="visa-info"><strong>Tourist (L):</strong> ~$140-185 • 10 years • 30-60 days/visit</p>
@@ -806,8 +810,9 @@
                     <ul class="visa-links">
                         <li><a href="https://www.kemlu.go.id/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://evisa.imigrasi.go.id/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                        <li><a href="https://allindonesia.imigrasi.go.id/" class="arrival" target="_blank"><span class="icon">📱</span> All Indonesia Arrival Card</a></li>
                     </ul>
-                    <p class="visa-info"><strong>E-Visa:</strong> ~$35-50 • 60 days • <strong>Processing:</strong> 2-5 days | <strong>VoA:</strong> $35, immediate at select airports</p>
+                    <p class="visa-info"><strong>E-Visa:</strong> ~$35-50 • 60 days • <strong>Processing:</strong> 2-5 days | <strong>VoA:</strong> $35, immediate at select airports • Arrival card required</p>
                 </div>
                 
                 <div class="country-card" data-country="iran">
@@ -838,7 +843,9 @@
                     <ul class="visa-links">
                         <li><a href="https://www.mofa.go.jp/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.evisa.mofa.go.jp/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://www.vjw.digital.go.jp/" class="arrival" target="_blank"><span class="icon">📱</span> Visit Japan Web</a></li>
                     </ul>
+                    <p class="visa-info"><strong>Arrival card:</strong> Submit immigration and customs information through Visit Japan Web for faster entry.</p>
                 </div>
                 
                 <div class="country-card" data-country="jordan">
@@ -943,7 +950,9 @@
                     <ul class="visa-links">
                         <li><a href="https://www.dfa.gov.ph/" class="official" target="_blank"><span class="icon">🏛️</span> Department of Foreign Affairs</a></li>
                         <li><a href="https://evisa.gov.ph/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Portal</a></li>
+                        <li><a href="https://etravel.gov.ph/" class="arrival" target="_blank"><span class="icon">📱</span> eTravel Registration</a></li>
                     </ul>
+                    <p class="visa-info"><strong>eTravel:</strong> Required electronic arrival/departure registration, usually completed within 72 hours before travel.</p>
                 </div>
                 
                 <div class="country-card" data-country="qatar">
@@ -968,8 +977,9 @@
                     <ul class="visa-links">
                         <li><a href="https://www.ica.gov.sg/" class="official" target="_blank"><span class="icon">🏛️</span> ICA Singapore</a></li>
                         <li><a href="https://eservices.ica.gov.sg/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://eservices.ica.gov.sg/sgarrivalcard/" class="arrival" target="_blank"><span class="icon">📱</span> SG Arrival Card</a></li>
                     </ul>
-                    <p class="visa-info"><strong>Visa-free:</strong> 90 days (US/EU/UK) • E-visa: SGD $30</p>
+                    <p class="visa-info"><strong>Visa-free:</strong> 90 days (US/EU/UK) • SG Arrival Card required within 3 days before arrival • E-visa: SGD $30</p>
                 </div>
                 
                 <div class="country-card" data-country="south korea,korea">
@@ -977,8 +987,9 @@
                     <ul class="visa-links">
                         <li><a href="https://www.visa.go.kr/" class="official" target="_blank"><span class="icon">🏛️</span> Visa Portal</a></li>
                         <li><a href="https://www.k-eta.go.kr/" class="arrival" target="_blank"><span class="icon">📱</span> K-ETA Application</a></li>
+                        <li><a href="https://www.e-arrivalcard.go.kr/" class="arrival" target="_blank"><span class="icon">📱</span> e-Arrival Card</a></li>
                     </ul>
-                    <p class="visa-info"><strong>K-ETA:</strong> ₩10,000 (~$8) • 2 years • 90 days/visit</p>
+                    <p class="visa-info"><strong>K-ETA:</strong> ₩10,000 (~$8) • 2 years • 90 days/visit | <strong>e-Arrival Card:</strong> Submit up to 3 days before arrival when required</p>
                 </div>
                 
                 <div class="country-card" data-country="sri lanka">
@@ -993,7 +1004,9 @@
                     <h3><span class="country-flag">🇹🇼</span> Taiwan</h3>
                     <ul class="visa-links">
                         <li><a href="https://visawebapp.boca.gov.tw/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://twac.immigration.gov.tw/" class="arrival" target="_blank"><span class="icon">📱</span> Taiwan Arrival Card</a></li>
                     </ul>
+                    <p class="visa-info"><strong>TWAC:</strong> Online Taiwan Arrival Card required for faster immigration clearance.</p>
                 </div>
                 
                 <div class="country-card" data-country="tajikistan">
@@ -1008,7 +1021,7 @@
                     <ul class="visa-links">
                         <li><a href="https://www.mfa.go.th/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.thaievisa.go.th/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
-                        <li><a href="https://tdac.immigration.go.th/" class="arrival" target="_blank"><span class="icon">📱</span> Digital Arrival Card</a></li>
+                        <li><a href="https://tdac.immigration.go.th/arrival-card/#/home" class="arrival" target="_blank"><span class="icon">📱</span> Thailand Digital Arrival Card</a></li>
                     </ul>
                     <p class="visa-info"><strong>Visa-free:</strong> 60 days (US/EU/UK) • TDAC required | <strong>VoA:</strong> 2,000 THB (~$60), 15 days, immediate at airports</p>
                 </div>
@@ -1041,7 +1054,7 @@
 
         <!-- AFRICA -->
         <section id="africa" class="region-section">
-            <h2>🌍 Africa</h2>
+            <h2>Africa</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="south africa">
                     <h3><span class="country-flag">🇿🇦</span> South Africa</h3>
@@ -1195,7 +1208,7 @@
 
         <!-- OCEANIA -->
         <section id="oceania" class="region-section">
-            <h2>🌏 Oceania</h2>
+            <h2>Oceania</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="australia">
                     <h3><span class="country-flag">🇦🇺</span> Australia</h3>
@@ -1255,7 +1268,7 @@
 
         <!-- CARIBBEAN -->
         <section id="caribbean" class="region-section">
-            <h2>🏝️ Caribbean</h2>
+            <h2>Caribbean</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="bahamas">
                     <h3><span class="country-flag">🇧🇸</span> Bahamas</h3>
@@ -1359,7 +1372,7 @@
 
         <!-- LATIN AMERICA -->
         <section id="latin-america" class="region-section">
-            <h2>🌎 Latin America</h2>
+            <h2>Latin America</h2>
             <div class="country-grid">
                 <div class="country-card" data-country="argentina">
                     <h3><span class="country-flag">🇦🇷</span> Argentina</h3>
@@ -1511,106 +1524,96 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="note">
-                <strong>📌 Note:</strong> Many Latin American countries offer visa-free entry for tourists from North America, Europe, and other regions for stays of 30-90 days. Always verify current requirements before travel.
-            </div>
         </section>
 
-        <div class="region-section" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b;">
-            <h2 style="border-bottom-color: #f59e0b;">🛂 Visa on Arrival (VoA) - Quick Reference</h2>
-            <p style="margin-bottom: 20px; font-size: 1.05em;">Countries where US/EU/UK passport holders can get a visa <strong>upon arrival</strong> at the airport/border:</p>
+        <div class="region-section voa-section">
+            <h2>Visa on Arrival (VoA) Quick Reference</h2>
+            <p class="voa-intro">Countries where US/EU/UK passport holders can get a visa <strong>upon arrival</strong> at the airport/border:</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+            <div class="voa-grid">
+                <div class="voa-item">
                     <strong>🇦🇪 UAE</strong> – Free, 30 days (US/EU/UK)
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇧🇭 Bahrain</strong> – ~$15, 14 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇰🇭 Cambodia</strong> – $30, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇪🇬 Egypt</strong> – $25, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇮🇩 Indonesia</strong> – $35, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇯🇴 Jordan</strong> – 40 JOD (~$56), 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇰🇪 Kenya</strong> – $51, 90 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇰🇼 Kuwait</strong> – ~$10, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇱🇦 Laos</strong> – $30-42, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇱🇧 Lebanon</strong> – Free, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇲🇻 Maldives</strong> – FREE, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇲🇺 Mauritius</strong> – FREE, 90 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇳🇵 Nepal</strong> – $30-50, 30-90 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇴🇲 Oman</strong> – ~$15-25, 14-30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇶🇦 Qatar</strong> – Free (eligible nationalities)
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇷🇼 Rwanda</strong> – $50, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇸🇨 Seychelles</strong> – FREE, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇱🇰 Sri Lanka</strong> – ~$50, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇹🇿 Tanzania</strong> – $50-100, 90 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇹🇭 Thailand</strong> – 2,000 THB (~$60), 15 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇹🇱 Timor-Leste</strong> – $30, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇹🇬 Togo</strong> – ~$35, 7 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇺🇬 Uganda</strong> – $50, 90 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇻🇳 Vietnam</strong> – $25 stamping (letter required)
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇿🇼 Zimbabwe</strong> – $30-55, 30 days
                 </div>
-                <div style="background: rgba(255,255,255,0.8); padding: 12px 16px; border-radius: 10px;">
+                <div class="voa-item">
                     <strong>🇿🇲 Zambia</strong> – $50, 90 days
                 </div>
-            </div>
-            
-            <div class="note" style="margin-top: 20px; background: rgba(255,255,255,0.7); border-color: #f59e0b;">
-                <strong>⚠️ Important:</strong> VoA availability depends on your nationality. Always carry: (1) Passport valid 6+ months, (2) Return/onward ticket, (3) Proof of accommodation, (4) Exact cash in USD/local currency. Some airports only accept cash!
             </div>
         </div>
 
         <footer>
-            <p>⚠️ <strong>Disclaimer:</strong> Visa requirements change frequently. Always verify with official government sources before travel.</p>
-            <p>This guide provides links to official government visa websites only. We are not affiliated with any government agency.</p>
-            <p style="margin-top: 15px;">Last Updated: March 2026</p>
+            <p class="footer-meta">Last Updated: May 2026</p>
         </footer>
     </div>
 
@@ -1621,6 +1624,14 @@
         const regionNav = document.querySelector('.region-nav');
         const regionSections = document.querySelectorAll('.region-section');
         const citizenshipSelect = document.getElementById('citizenshipSelect');
+
+        function getCountryDisplayName(card) {
+            return Array.from(card.querySelector('h3').childNodes)
+                .filter(node => node.nodeType === Node.TEXT_NODE)
+                .map(node => node.textContent.trim())
+                .filter(Boolean)
+                .join(' ');
+        }
         
         // Visa requirements by citizenship (us, eu, cn, jp)
         // free = visa-free, evisa = e-visa available, voa = visa on arrival, eta = eta required, required = embassy visa required
@@ -1779,7 +1790,10 @@
             
             countryCards.forEach(card => {
                 const dataCountry = card.getAttribute('data-country');
-                const countryName = card.querySelector('h3').textContent.toLowerCase().replace(/^[^\s]+\s/, '').trim();
+                const existingBadge = card.querySelector('.visa-requirement-badge');
+                if (existingBadge) existingBadge.remove();
+
+                const countryName = getCountryDisplayName(card).toLowerCase();
                 
                 // Find matching requirement
                 let requirement = null;
@@ -1789,10 +1803,6 @@
                         break;
                     }
                 }
-                
-                // Remove existing badge
-                const existingBadge = card.querySelector('.visa-requirement-badge');
-                if (existingBadge) existingBadge.remove();
                 
                 // Add new badge if we have a requirement
                 if (requirement && requirementLabels[requirement]) {
@@ -1826,13 +1836,13 @@
             const results = [];
             
             countryCards.forEach(card => {
-                const countryName = card.querySelector('h3').textContent.toLowerCase();
+                const countryName = getCountryDisplayName(card).toLowerCase();
                 const dataCountry = card.getAttribute('data-country');
                 
                 if (countryName.includes(query) || (dataCountry && dataCountry.includes(query))) {
                     results.push({
                         card: card,
-                        name: card.querySelector('h3').textContent
+                        name: getCountryDisplayName(card)
                     });
                 }
             });
@@ -1862,7 +1872,7 @@
                     item.addEventListener('click', function() {
                         const targetName = this.textContent;
                         const targetCard = Array.from(countryCards).find(card => 
-                            card.querySelector('h3').textContent === targetName
+                            getCountryDisplayName(card) === targetName
                         );
                         if (targetCard) {
                             targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
