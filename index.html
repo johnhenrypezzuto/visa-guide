@@ -212,36 +212,22 @@
         .legend-color--arrival { background: var(--warning); }
         .legend-color--voa { background: var(--danger); }
 
-        .health-filter {
-            display: grid;
-            grid-template-columns: minmax(210px, 320px) minmax(0, 1fr);
-            align-items: center;
-            gap: 12px 18px;
-            margin-bottom: 20px;
-            padding: 16px 18px;
-            background: var(--white);
-            border: 1px solid var(--line);
-            border-radius: 10px;
-        }
-
-        .health-filter label { font-weight: 700; color: var(--ink); }
-        .health-filter select {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid var(--line-strong);
-            border-radius: 7px;
-            background: var(--white);
-            color: var(--ink);
-            font: inherit;
-        }
-        .health-filter select:focus,
         .search-result-item:focus-visible {
             outline: 3px solid rgba(31, 95, 139, 0.35);
             outline-offset: 2px;
         }
-        .health-filter-help,
-        .filter-summary { grid-column: 1 / -1; color: var(--muted); font-size: 0.86rem; }
-        .filter-summary { margin-top: -8px; }
+        .filter-summary { margin: 7px 0 0; color: var(--muted); font-size: 0.86rem; }
+        .health-methodology {
+            margin: 0 0 20px;
+            padding: 14px 16px;
+            border: 1px solid #d4e1e7;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            background: #f1f6f8;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .health-methodology strong { color: var(--ink); }
 
         .health-details {
             margin-top: 12px;
@@ -266,7 +252,8 @@
         .health-status--required { background: #f7e4e4; color: #873232; }
         .health-status--conditional { background: #fbefd7; color: #7f5410; }
         .health-status--none { background: #e4f4ed; color: #176346; }
-        .health-status--unverified { background: #edf0f4; color: #4c5968; }
+        .health-status--none-listed { background: #edf0f4; color: #4c5968; }
+        .health-status--check { background: #fbefd7; color: #7f5410; }
         .health-source { color: var(--primary); font-weight: 700; }
         .health-checked { margin-top: 9px; color: var(--subtle); font-size: 0.76rem; }
         
@@ -307,6 +294,11 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 16px;
+        }
+
+        .country-grid.single-result {
+            grid-template-columns: minmax(0, min(100%, 720px));
+            justify-content: center;
         }
         
         .country-card {
@@ -412,7 +404,6 @@
             .region-nav { position: static; }
             .region-nav a { padding: 8px 10px; font-size: 0.84rem; }
             .legend { display: grid; grid-template-columns: 1fr; gap: 12px; }
-            .health-filter { grid-template-columns: 1fr; }
             .legend-item,
             .visa-links a,
             .visa-info,
@@ -454,6 +445,7 @@
                 <input type="text" id="searchInput" role="combobox" aria-haspopup="listbox" placeholder="Search for a country..." autocomplete="off" aria-label="Search for a destination" aria-controls="searchResults" aria-autocomplete="list" aria-expanded="false">
                 <div id="searchResults" role="listbox" aria-label="Destination search results"></div>
             </div>
+            <p id="filterSummary" class="filter-summary" aria-live="polite"></p>
         </header>
         
         <nav class="region-nav">
@@ -485,18 +477,7 @@
             </div>
         </div>
 
-        <div class="health-filter">
-            <label for="healthFilter">Filter by health information</label>
-            <select id="healthFilter">
-                <option value="all">All destinations</option>
-                <option value="required">Health declaration required</option>
-                <option value="conditional">Conditional health rule</option>
-                <option value="none">At least one item confirmed not required</option>
-                <option value="unverified">At least one item needs verification</option>
-            </select>
-            <p class="health-filter-help">Health entry rules can depend on recent travel or symptoms. “Not verified” means no current destination-government source confirmed the detail.</p>
-            <p id="filterSummary" class="filter-summary" aria-live="polite"></p>
-        </div>
+        <p class="health-methodology"><strong>Health information:</strong> Each card separates health declarations from yellow-fever vaccination certificates. “No general form listed” means the linked official entry guidance does not list a routine nationwide health declaration; temporary rules can still depend on route, symptoms, or current outbreaks. Yellow-fever rules link to the CDC destination profile or the destination health authority. Sources were checked 21 October 2026.</p>
         
         <!-- NORTH AMERICA -->
         <section id="north-america" class="region-section">
@@ -538,7 +519,7 @@
                 <div class="country-card" data-country="austria">
                     <h3><span class="country-flag">🇦🇹</span> Austria</h3>
                     <ul class="visa-links">
-                        <li><a href="https://www.bmeia.gv.at/en/" class="official" target="_blank"><span class="icon">🏛️</span> Federal Ministry (BMEIA)</a></li>
+                        <li><a href="https://www.oesterreich.gv.at/en/themen/menschen_aus_anderen_staaten/visum_fuer_oesterreich" class="official" target="_blank"><span class="icon">🏛️</span> Federal Ministry (BMEIA)</a></li>
                         <li><a href="https://www.schengenvisainfo.com/austria-visa/" class="evisa" target="_blank"><span class="icon">💻</span> Visa Information</a></li>
                     </ul>
                 </div>
@@ -922,7 +903,7 @@
                     <ul class="visa-links">
                         <li><a href="https://www.mofa.go.jp/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.evisa.mofa.go.jp/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
-                        <li><a href="https://www.vjw.digital.go.jp/" class="arrival" target="_blank"><span class="icon">📱</span> Visit Japan Web</a></li>
+                        <li><a href="https://services.digital.go.jp/en/visit-japan-web/" class="arrival" target="_blank"><span class="icon">📱</span> Visit Japan Web Guide</a></li>
                     </ul>
                     <p class="visa-info"><strong>Arrival card:</strong> Submit immigration and customs information through Visit Japan Web for faster entry.</p>
                 </div>
@@ -1179,7 +1160,7 @@
                 <div class="country-card" data-country="ethiopia">
                     <h3><span class="country-flag">🇪🇹</span> Ethiopia</h3>
                     <ul class="visa-links">
-                        <li><a href="https://www.mfa.gov.et/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://mfa.gov.et/travellocation/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.evisa.gov.et/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
                 </div>
@@ -1263,7 +1244,7 @@
                     <h3><span class="country-flag">🇿🇲</span> Zambia</h3>
                     <ul class="visa-links">
                         <li><a href="https://www.zambiaimmigration.gov.zm/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration Department</a></li>
-                        <li><a href="https://www.zambiaimmigration.gov.zm/evisa" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
+                        <li><a href="https://eservices.zambiaimmigration.gov.zm/" class="evisa" target="_blank"><span class="icon">💻</span> E-Visa Application</a></li>
                     </ul>
                     <p class="visa-info"><strong>E-Visa:</strong> $50 • <strong>Processing:</strong> 3-5 days | <strong>VoA:</strong> $50, immediate at Lusaka airport | KAZA Univisa: $50 (Zambia+Zimbabwe)</p>
                 </div>
@@ -1302,7 +1283,7 @@
                     <h3><span class="country-flag">🇳🇿</span> New Zealand</h3>
                     <ul class="visa-links">
                         <li><a href="https://www.immigration.govt.nz/" class="official" target="_blank"><span class="icon">🏛️</span> Immigration NZ</a></li>
-                        <li><a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/waiver-visa" class="arrival" target="_blank"><span class="icon">📱</span> NZeTA</a></li>
+                        <li><a href="https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/" class="arrival" target="_blank"><span class="icon">📱</span> NZeTA</a></li>
                     </ul>
                     <p class="visa-info"><strong>NZeTA:</strong> NZD $23 • 2 years • 90 days/visit</p>
                 </div>
@@ -1428,7 +1409,7 @@
                     <h3><span class="country-flag">🇨🇼</span> Curaçao</h3>
                     <ul class="visa-links">
                         <li><a href="https://www.curacao.gov.cw/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
-                        <li><a href="https://www.dicardcuracao.com/" class="arrival" target="_blank"><span class="icon">📱</span> DI Card</a></li>
+                        <li><a href="https://dicardcuracao.com/dicard" class="arrival" target="_blank"><span class="icon">📱</span> DI Card</a></li>
                     </ul>
                 </div>
                 
@@ -1443,7 +1424,7 @@
                     <h3><span class="country-flag">🇧🇲</span> Bermuda</h3>
                     <ul class="visa-links">
                         <li><a href="https://www.gov.bm/" class="official" target="_blank"><span class="icon">🏛️</span> Government Portal</a></li>
-                        <li><a href="https://www.gov.bm/bermuda-travel-authorisation" class="arrival" target="_blank"><span class="icon">📱</span> Travel Authorisation</a></li>
+                        <li><a href="https://www2.gov.bm/visitors" class="arrival" target="_blank"><span class="icon">📱</span> Visitor Arrival Info</a></li>
                     </ul>
                 </div>
             </div>
@@ -1539,7 +1520,7 @@
                 <div class="country-card" data-country="mexico">
                     <h3><span class="country-flag">🇲🇽</span> Mexico</h3>
                     <ul class="visa-links">
-                        <li><a href="https://www.gob.mx/sre/" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
+                        <li><a href="https://www.gob.mx/inm/documentos/si-deseas-visitar-mexico-consulta-nuestra-guia-del-viajero" class="official" target="_blank"><span class="icon">🏛️</span> Ministry of Foreign Affairs</a></li>
                         <li><a href="https://www.inm.gob.mx/sae/" class="arrival" target="_blank"><span class="icon">📱</span> SAE Authorization</a></li>
                     </ul>
                 </div>
@@ -1696,6 +1677,7 @@
         </footer>
     </div>
 
+    <script src="health-data.js"></script>
     <script>
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
@@ -1703,7 +1685,6 @@
         const regionNav = document.querySelector('.region-nav');
         const regionSections = document.querySelectorAll('.region-section:not(.voa-section)');
         const citizenshipSelect = document.getElementById('citizenshipSelect');
-        const healthFilter = document.getElementById('healthFilter');
         const filterSummary = document.getElementById('filterSummary');
 
         function getCountryDisplayName(card) {
@@ -1866,195 +1847,15 @@
             'required': { text: 'Visa Required', class: 'badge-required' }
         };
 
-        const healthCheckedDate = '21 October 2026';
         const healthStatusLabels = {
             required: 'Required',
-            conditional: 'Conditional',
+            conditional: 'Route-dependent',
             none: 'Not required',
-            unverified: 'Not verified'
+            'none-listed': 'No general form listed',
+            check: 'Check current rule'
         };
 
-        // Only include a confirmed status when a destination-government source supports it.
-        // Other countries remain explicitly unverified and link to their listed government portal.
-        const healthRecords = {
-            'cambodia': {
-                declaration: {
-                    status: 'required',
-                    detail: 'All travelers must submit Cambodia e-Arrival, which includes a health declaration, within 7 days before arrival.',
-                    sourceUrl: 'https://epayment.arrival.gov.kh/',
-                    sourceLabel: 'Cambodia e-Arrival official FAQ'
-                },
-                entry: {
-                    status: 'unverified',
-                    detail: 'Current health entry requirements beyond the declaration have not been confirmed.',
-                    sourceUrl: 'https://arrival.gov.kh/',
-                    sourceLabel: 'Cambodia e-Arrival official portal'
-                }
-            },
-            'china': {
-                declaration: {
-                    status: 'none',
-                    detail: 'China’s customs authority ended the general inbound and outbound health declaration form requirement on 1 November 2023. Travelers with symptoms must report them to customs.',
-                    sourceUrl: 'https://english.www.gov.cn/news/202310/31/content_WS6540a78ec6d0868f4e8e0d15.html',
-                    sourceLabel: 'State Council notice (2023)'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Travelers with symptoms of infectious diseases must declare their health condition to customs and cooperate with screening.',
-                    sourceUrl: 'https://english.www.gov.cn/news/202310/31/content_WS6540a78ec6d0868f4e8e0d15.html',
-                    sourceLabel: 'State Council notice (2023)'
-                }
-            },
-            'indonesia': {
-                declaration: {
-                    status: 'required',
-                    detail: 'International passengers must complete the All Indonesia arrival declaration, which combines immigration, customs, health, and quarantine information.',
-                    sourceUrl: 'https://www.imigrasi.go.id/faq',
-                    sourceLabel: 'Directorate General of Immigration FAQ'
-                },
-                entry: {
-                    status: 'unverified',
-                    detail: 'Current health entry requirements beyond the declaration have not been confirmed.',
-                    sourceUrl: 'https://allindonesia.imigrasi.go.id/',
-                    sourceLabel: 'All Indonesia official portal'
-                }
-            },
-            'malaysia': {
-                declaration: {
-                    status: 'unverified',
-                    detail: 'A current health-specific declaration requirement has not been confirmed.',
-                    sourceUrl: 'https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/',
-                    sourceLabel: 'Malaysian Immigration Department'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Travelers arriving from yellow-fever-risk countries must present a valid yellow fever vaccination certificate.',
-                    sourceUrl: 'https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/',
-                    sourceLabel: 'Malaysian Immigration Department'
-                }
-            },
-            'maldives': {
-                declaration: {
-                    status: 'unverified',
-                    detail: 'The required Traveller Declaration is listed, but the official source does not confirm that it is a health declaration.',
-                    sourceUrl: 'https://imuga.immigration.gov.mv/traveller',
-                    sourceLabel: 'Maldives Immigration IMUGA'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'A valid yellow fever vaccination certificate is required for travelers arriving from, or recently traveling through, a yellow-fever-risk country.',
-                    sourceUrl: 'https://www.immigration.gov.mv/visa/tourist-visa',
-                    sourceLabel: 'Maldives Immigration tourist visa guidance'
-                }
-            },
-            'philippines': {
-                declaration: {
-                    status: 'required',
-                    detail: 'Arriving passengers must register with eTravel within 72 hours before arrival; the system includes the electronic health declaration checklist.',
-                    sourceUrl: 'https://etravel.gov.ph/frequently-asked-questions',
-                    sourceLabel: 'Philippine eTravel official FAQ'
-                },
-                entry: {
-                    status: 'unverified',
-                    detail: 'Current health entry requirements beyond the eTravel declaration have not been confirmed.',
-                    sourceUrl: 'https://quarantine.doh.gov.ph/',
-                    sourceLabel: 'Philippine Bureau of Quarantine'
-                }
-            },
-            'singapore': {
-                declaration: {
-                    status: 'required',
-                    detail: 'Most travelers entering Singapore must submit the SG Arrival Card with its electronic health declaration within 3 days before arrival. Transit passengers who do not clear immigration are exempt.',
-                    sourceUrl: 'https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card',
-                    sourceLabel: 'Singapore ICA SG Arrival Card guidance'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Travelers with recent travel to a yellow-fever-risk country, including qualifying airport transit, must present a valid yellow fever certificate or may be quarantined.',
-                    sourceUrl: 'https://www.ica.gov.sg/enter-transit-depart/entering-singapore/yellow-fever-vaccination-certificate',
-                    sourceLabel: 'Singapore ICA yellow fever requirements'
-                }
-            },
-            'south korea': {
-                declaration: {
-                    status: 'conditional',
-                    detail: 'Travelers who visited designated quarantine-management areas may need to submit Q-CODE or a health declaration; the area list changes over time.',
-                    sourceUrl: 'https://travelhealth.kdca.go.kr/travel/cd/qcoInfo.do?lang=en',
-                    sourceLabel: 'Korea Disease Control and Prevention Agency Q-CODE'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Health screening requirements depend on recent travel through designated areas and, in some cases, symptoms. Check the current KDCA list before travel.',
-                    sourceUrl: 'https://travelhealth.kdca.go.kr/travel/cd/qcoInfo.do?lang=en',
-                    sourceLabel: 'Korea Disease Control and Prevention Agency Q-CODE'
-                }
-            },
-            'south africa': {
-                declaration: {
-                    status: 'unverified',
-                    detail: 'A current digital health declaration requirement has not been confirmed.',
-                    sourceUrl: 'https://www.health.gov.za/wp-content/uploads/2026/09/Protocols-for-Travellers.pdf',
-                    sourceLabel: 'South African Department of Health traveller protocols'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Travelers over one year old arriving from a yellow-fever-risk country must show a valid international vaccination certificate.',
-                    sourceUrl: 'https://www.health.gov.za/wp-content/uploads/2026/09/Protocols-for-Travellers.pdf',
-                    sourceLabel: 'South African Department of Health traveller protocols'
-                }
-            },
-            'thailand': {
-                declaration: {
-                    status: 'unverified',
-                    detail: 'A current health-specific declaration requirement has not been confirmed.',
-                    sourceUrl: 'https://ddc.moph.go.th/',
-                    sourceLabel: 'Thai Department of Disease Control'
-                },
-                entry: {
-                    status: 'conditional',
-                    detail: 'Travelers arriving from a yellow-fever-infected zone must provide a valid vaccination certificate to health officials at the checkpoint.',
-                    sourceUrl: 'https://ddc.moph.go.th/uploads/ckeditor2//files/declare_law_moph_8126439.pdf',
-                    sourceLabel: 'Thai Department of Disease Control notice'
-                }
-            },
-            'brazil': {
-                declaration: {
-                    status: 'unverified',
-                    detail: 'A current health-specific declaration requirement has not been confirmed.',
-                    sourceUrl: 'https://www.gov.br/anvisa/en/travellers',
-                    sourceLabel: 'Brazilian Health Regulatory Agency traveller guidance'
-                },
-                entry: {
-                    status: 'none',
-                    detail: 'Brazil’s Ministry of Health says foreign visitors are not required to show proof of vaccination to enter the country; it recommends travelers keep routine vaccinations up to date.',
-                    sourceUrl: 'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-viajante/vacina-para-viajantes/vacina-para-viajantes',
-                    sourceLabel: 'Brazilian Ministry of Health traveller vaccination guidance'
-                }
-            }
-        };
-
-        function getFallbackHealthSource(card, slug) {
-            if (slug === 'suriname') {
-                return {
-                    url: 'https://gov.sr/ministeries/ministerie-van-volksgezondheid-welzijn-arbeid/',
-                    label: 'Suriname Ministry of Health'
-                };
-            }
-            if (slug === 'sri lanka') {
-                return { url: 'https://www.health.gov.lk/', label: 'Sri Lanka Ministry of Health' };
-            }
-
-            const link = card.querySelector('.visa-links a.official') ||
-                card.querySelector('.visa-links a.evisa') ||
-                card.querySelector('.visa-links a.arrival');
-            if (!link) return { url: 'https://www.gov.uk/foreign-travel-advice', label: 'Official travel guidance' };
-            return {
-                url: link.href,
-                label: `${link.textContent.trim()} (health details not verified)`
-            };
-        }
-
-        function createHealthRow(label, item, fallbackSource) {
+        function createHealthRow(label, item) {
             const row = document.createElement('p');
             row.className = 'health-row';
 
@@ -2064,7 +1865,7 @@
 
             const status = document.createElement('span');
             status.className = `health-status health-status--${item.status}`;
-            status.textContent = healthStatusLabels[item.status] || healthStatusLabels.unverified;
+            status.textContent = item.statusLabel || healthStatusLabels[item.status] || 'See official source';
             row.appendChild(status);
 
             const detail = document.createElement('span');
@@ -2073,50 +1874,47 @@
 
             const source = document.createElement('a');
             source.className = 'health-source';
-            source.href = item.sourceUrl || fallbackSource.url;
+            source.href = item.sourceUrl;
             source.target = '_blank';
             source.rel = 'noopener noreferrer';
-            source.textContent = ` Source: ${item.sourceLabel || fallbackSource.label}`;
+            source.textContent = ` Source: ${item.sourceLabel}`;
             row.appendChild(source);
+
+            if (item.secondarySourceUrl) {
+                const secondarySource = document.createElement('a');
+                secondarySource.className = 'health-source';
+                secondarySource.href = item.secondarySourceUrl;
+                secondarySource.target = '_blank';
+                secondarySource.rel = 'noopener noreferrer';
+                secondarySource.textContent = `; ${item.secondarySourceLabel}`;
+                row.appendChild(secondarySource);
+            }
             return row;
         }
 
         function addHealthDetails() {
             countryCards.forEach(card => {
                 const slug = (card.getAttribute('data-country') || '').split(',')[0].trim();
-                const fallbackSource = getFallbackHealthSource(card, slug);
-                const sourceRecord = healthRecords[slug] || {
-                    declaration: {
-                        status: 'unverified',
-                        detail: 'A current destination-government health declaration source has not been verified.',
-                        sourceUrl: fallbackSource.url,
-                        sourceLabel: fallbackSource.label
-                    },
-                    entry: {
-                        status: 'unverified',
-                        detail: 'Current destination-government health entry rules have not been verified.',
-                        sourceUrl: fallbackSource.url,
-                        sourceLabel: fallbackSource.label
-                    }
-                };
-                const record = { lastChecked: healthCheckedDate, ...sourceRecord };
-
-                card.dataset.healthDeclaration = record.declaration.status;
-                card.dataset.healthEntry = record.entry.status;
+                const record = window.VISA_GUIDE_HEALTH[slug];
+                if (!record) {
+                    console.error(`Missing health record for ${slug}`);
+                    return;
+                }
 
                 const section = document.createElement('section');
                 section.className = 'health-details';
-                section.setAttribute('aria-label', 'Health entry information');
+                section.setAttribute('aria-label', 'Health declaration and entry information');
 
                 const heading = document.createElement('h4');
-                heading.textContent = 'Health entry information';
+                heading.textContent = 'Health forms and entry rules';
                 section.appendChild(heading);
-                section.appendChild(createHealthRow('Health declaration', record.declaration, fallbackSource));
-                section.appendChild(createHealthRow('Entry health rules', record.entry, fallbackSource));
+                section.appendChild(createHealthRow('Health declaration', record.declaration));
+                section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
+                if (record.special) section.appendChild(createHealthRow('Other route-based rule', record.special));
 
                 const checked = document.createElement('p');
                 checked.className = 'health-checked';
-                checked.textContent = `Health information reviewed: ${record.lastChecked}. Verify details with the linked authority before travel.`;
+                checked.textContent = `Sources checked: ${record.lastChecked}. Confirm current rules with the linked authority before travel.`;
                 section.appendChild(checked);
 
                 const visaInfo = card.querySelector('.visa-info');
@@ -2155,16 +1953,6 @@
             });
         }
 
-        function matchesHealthFilter(card, filter) {
-            const declaration = card.dataset.healthDeclaration;
-            const entry = card.dataset.healthEntry;
-            if (filter === 'required') return declaration === 'required';
-            if (filter === 'conditional') return declaration === 'conditional' || entry === 'conditional';
-            if (filter === 'none') return declaration === 'none' || entry === 'none';
-            if (filter === 'unverified') return declaration === 'unverified' || entry === 'unverified';
-            return true;
-        }
-
         function renderSearchResults(cards, query) {
             searchResults.replaceChildren();
             if (!query) {
@@ -2177,7 +1965,7 @@
                 const empty = document.createElement('div');
                 empty.className = 'search-result-item';
                 empty.setAttribute('role', 'option');
-                empty.textContent = 'No destinations match the current search and health filter.';
+                empty.textContent = 'No destinations match your search.';
                 searchResults.appendChild(empty);
             } else {
                 cards.forEach(card => {
@@ -2201,14 +1989,13 @@
 
         function applyFilters() {
             const query = searchInput.value.toLowerCase().trim();
-            const selectedHealthFilter = healthFilter.value;
             const matchedCards = [];
 
             countryCards.forEach(card => {
                 const countryName = getCountryDisplayName(card).toLowerCase();
                 const dataCountry = (card.getAttribute('data-country') || '').toLowerCase();
                 const matchesQuery = !query || countryName.includes(query) || dataCountry.includes(query);
-                const isVisible = matchesQuery && matchesHealthFilter(card, selectedHealthFilter);
+                const isVisible = matchesQuery;
                 card.classList.toggle('hidden', !isVisible);
                 if (isVisible) matchedCards.push(card);
             });
@@ -2216,6 +2003,8 @@
             regionSections.forEach(section => {
                 const visibleCards = section.querySelectorAll('.country-card:not(.hidden)');
                 section.classList.toggle('hidden', visibleCards.length === 0);
+                const grid = section.querySelector('.country-grid');
+                if (grid) grid.classList.toggle('single-result', !!query && visibleCards.length === 1);
             });
 
             if (regionNav) regionNav.style.display = query ? 'none' : 'flex';
@@ -2228,7 +2017,6 @@
             updateCitizenshipFilter();
             applyFilters();
         });
-        healthFilter.addEventListener('change', applyFilters);
         searchInput.addEventListener('input', applyFilters);
         searchInput.addEventListener('keydown', event => {
             if (event.key === 'ArrowDown') {

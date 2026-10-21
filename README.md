@@ -2,13 +2,14 @@
 
 A comprehensive travel visa resource website with official government links for visa applications and digital arrival cards.
 
-**Live website:** https://johnhenrypezzuto.github.io/visa-guide/
+**Live website:** [johnhenrypezzuto.github.io/visa-guide](https://johnhenrypezzuto.github.io/visa-guide/)
 
 ## 📁 Structure
 
 ```
 visa-guide/
 ├── index.html      # Main website (single-page, responsive)
+├── health-data.js  # Health declaration and entry-rule sources for all destinations
 └── README.md       # This file
 ```
 
@@ -65,13 +66,13 @@ Each country card includes up to three types of links:
 
 ## 🩺 Health Information
 
-Each destination card also shows:
+All 132 destination cards also show:
 
-- Health declaration form status
-- Health-related entry requirements, including route-dependent rules where verified
-- Destination-government source links and a per-destination review date; unverified items link to an official travel or immigration page for confirmation
+- Health declaration guidance, including current nationwide forms and route-dependent forms or screening
+- Yellow-fever vaccination certificate entry rules, with a country-specific source
+- Direct official entry or health authority links and a per-destination “sources checked” date
 
-Information without a current supporting government source is labeled **Not verified**. Travelers should confirm current requirements with the linked authority before departure.
+“No general form listed” means the linked official entry guidance does not list a routine nationwide health declaration; temporary or route-specific measures can still apply. “Check current rule” flags a source that lists a form but does not clearly say whether all arrivals must use it. Yellow-fever certificates are entry rules, separate from vaccine recommendations, and link to CDC Travelers’ Health or the destination health authority. This section covers entry procedures, not personalized medical advice.
 
 ## 🎨 Features
 
@@ -79,7 +80,6 @@ Information without a current supporting government source is labeled **Not veri
 - **Quick Navigation** - Jump links to each region
 - **Visual Legend** - Color-coded link types
 - **Country Flags** - Easy visual identification
-- **Health Filter** - Find destinations with required, conditional, or unverified health information
 - **Hover Effects** - Interactive card animations
 - **External Links** - All links open in new tabs
 
@@ -87,12 +87,12 @@ Information without a current supporting government source is labeled **Not veri
 
 To update the website:
 
-1. Edit `index.html` directly
+1. Edit `index.html` for layout and `health-data.js` for per-destination health records
 2. Update country information, links, or add new countries
-3. Update the country's health declaration and entry-rule record using destination-government sources; leave unsupported details marked "Not verified"
-4. Set a country-specific `lastChecked` date in `healthRecords` when you verify its sources; unverified records use `healthCheckedDate` as the fallback date
+3. Use the destination’s official immigration or health authority for health-form rules and link the supporting source directly
+4. Set each destination’s `lastChecked` date when you review its sources; link CDC Travelers’ Health for country-specific yellow-fever certificate rules
 5. Update the "Last Updated" date in the footer
-6. Test all links periodically
+6. Recheck official sources before travel; outbreak measures and entry forms can change quickly
 
 ## 🚀 Deployment
 
