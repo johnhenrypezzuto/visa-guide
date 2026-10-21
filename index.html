@@ -477,7 +477,7 @@
             </div>
         </div>
 
-        <p class="health-methodology"><strong>Health information:</strong> Each card separates health declarations from yellow-fever vaccination certificates. “No general form listed” means the linked official entry guidance does not list a routine nationwide health declaration; temporary rules can still depend on route, symptoms, or current outbreaks. Yellow-fever rules link to the CDC destination profile or the destination health authority. Sources were checked 21 October 2026.</p>
+        <p class="health-methodology"><strong>Health information:</strong> Health declarations and destination-specific entry rules are shown below. Yellow-fever certificates appear only when an official rule applies to all travelers or depends on route. Temporary requirements can change, so confirm current rules with the linked authority before travel. Sources were checked 21 October 2026.</p>
         
         <!-- NORTH AMERICA -->
         <section id="north-america" class="region-section">
@@ -1909,7 +1909,9 @@
                 heading.textContent = 'Health forms and entry rules';
                 section.appendChild(heading);
                 section.appendChild(createHealthRow('Health declaration', record.declaration));
-                section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
+                if (record.yellowFever.status === 'required' || record.yellowFever.status === 'conditional') {
+                    section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
+                }
                 if (record.special) section.appendChild(createHealthRow('Other route-based rule', record.special));
 
                 const checked = document.createElement('p');
