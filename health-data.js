@@ -607,11 +607,11 @@ window.VISA_GUIDE_HEALTH = {
     "declaration": {
       "status": "required",
       "statusLabel": "Required for all arrivals",
-      "detail": "India’s current outbreak-response measure requires every international arrival to submit the Air Suvidha 2.0 health self-declaration before immigration clearance. Submit before boarding; the government says it can be completed 24 hours before arrival.",
+      "detail": "All international passengers arriving in India must submit the online Air Suvidha 2.0 Health Self-Declaration before immigration clearance. Complete it before boarding; the government says it can be submitted up to 24 hours before arrival.",
       "actionUrl": "https://airsuvidha.civilaviation.gov.in/",
       "actionLabel": "Complete Air Suvidha 2.0",
       "sourceUrl": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2277648&lang=2&reg=48",
-      "sourceLabel": "Ministry of Health notice — mandatory for international arrivals (25 Jun 2026)"
+      "sourceLabel": "Government of India — mandatory Air Suvidha 2.0 notice (25 Jun 2026)"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1193,13 +1193,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Uganda",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "required",
-      "statusLabel": "CAA directive requires a form at Entebbe",
-      "detail": "Uganda’s Civil Aviation Authority’s published directive says all travelers through Entebbe must pre-fill a passenger locator form. The directive is tied to 2026 Ebola measures, so confirm it is still in effect before travel.",
-      "sourceUrl": "https://caa.go.ug/s04-26-bundibugyo-ebola-virus-disease-buevd-health-measures-for-entebbe-international-airport/",
-      "sourceLabel": "Uganda Civil Aviation Authority — S04/26 directive (1 Jun 2026)",
-      "actionUrl": "https://evd.health.go.ug/declare/?lang=en",
-      "actionLabel": "Open Uganda traveler health form"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",

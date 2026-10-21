@@ -91,10 +91,11 @@ To update the website:
 2. Update country information, links, or add new countries
 3. Search the destination’s health, immigration, aviation, and arrival-form authorities for current rules; do not rely on a visa landing page or search snippet
 4. Use destination-government sources for claims about that destination. State exactly who must file, when, and which routes or local areas trigger a rule; do not infer “not required” from silence
-5. Keep universal arrival requirements separate from uncommon route-only certificate conditions. Do not copy routine vaccine recommendations into entry requirements
-6. Set the destination’s `lastChecked` date only after reviewing the linked source; use CDC destination guidance as a cross-check for yellow-fever routes
-7. Update the "Last Updated" date in the footer
-8. Recheck official sources before travel; outbreak measures and entry forms can change quickly
+5. Before publishing a temporary outbreak rule, check for a later government notice ending or changing it. Do not treat an old directive or an active form portal as proof that the rule remains in force
+6. Keep universal arrival requirements separate from uncommon route-only certificate conditions. Do not copy routine vaccine recommendations into entry requirements
+7. Set the destination’s `lastChecked` date only after reviewing the linked source; use CDC destination guidance as a cross-check for yellow-fever routes
+8. Update the "Last Updated" date in the footer
+9. Recheck official sources before travel; outbreak measures and entry forms can change quickly
 
 ## 🚀 Deployment
 
