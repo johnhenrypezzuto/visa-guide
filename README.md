@@ -66,13 +66,13 @@ Each country card includes up to three types of links:
 
 ## 🩺 Health Information
 
-All 132 destination cards also show:
+Health rows are added only when a destination authority or current official entry source identifies a form or rule:
 
-- Health declaration guidance, including current nationwide forms and route-dependent forms or screening
-- Yellow-fever vaccination certificate entry rules, with a country-specific source
-- Direct official entry or health authority links and a per-destination “sources checked” date
+- Required and route-dependent declarations, with a direct submission link where available
+- Yellow-fever certificates only when the destination requires them for all arrivals or for travel to named risk areas
+- A source link and the date that destination’s health entry information was reviewed
 
-“No general form listed” means the linked official entry guidance does not list a routine nationwide health declaration; temporary or route-specific measures can still apply. “Check current rule” flags a source that lists a form but does not clearly say whether all arrivals must use it. Yellow-fever certificates are entry rules, separate from vaccine recommendations, and link to CDC Travelers’ Health or the destination health authority. This section covers entry procedures, not personalized medical advice.
+The guide does not infer “no form required” from silence on a visa page. A card without a health row is not a claim that no requirement exists. If an official portal lists a form but does not say who must complete it, the card describes that uncertainty and links to the portal. General route-based yellow-fever certificate rules are not repeated on every card; check the linked CDC destination guidance if your itinerary includes a yellow-fever-risk country. This section covers entry procedures, not personalized medical advice.
 
 ## 🎨 Features
 
@@ -89,10 +89,12 @@ To update the website:
 
 1. Edit `index.html` for layout and `health-data.js` for per-destination health records
 2. Update country information, links, or add new countries
-3. Use the destination’s official immigration or health authority for health-form rules and link the supporting source directly
-4. Set each destination’s `lastChecked` date when you review its sources; link CDC Travelers’ Health for country-specific yellow-fever certificate rules
-5. Update the "Last Updated" date in the footer
-6. Recheck official sources before travel; outbreak measures and entry forms can change quickly
+3. Search the destination’s health, immigration, aviation, and arrival-form authorities for current rules; do not rely on a visa landing page or search snippet
+4. Use destination-government sources for claims about that destination. State exactly who must file, when, and which routes or local areas trigger a rule; do not infer “not required” from silence
+5. Keep universal arrival requirements separate from uncommon route-only certificate conditions. Do not copy routine vaccine recommendations into entry requirements
+6. Set the destination’s `lastChecked` date only after reviewing the linked source; use CDC destination guidance as a cross-check for yellow-fever routes
+7. Update the "Last Updated" date in the footer
+8. Recheck official sources before travel; outbreak measures and entry forms can change quickly
 
 ## 🚀 Deployment
 

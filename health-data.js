@@ -3,10 +3,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "United States",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://travel.state.gov/",
-      "sourceLabel": "Official entry guidance: State Department Travel"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none-listed",
@@ -28,10 +25,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Canada",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "Canada’s current Ebola border measures do not require a general pre-arrival health declaration form; they impose route-based screening, entry restrictions, and quarantine instead.",
-      "sourceUrl": "https://www.canada.ca/en/public-health/services/diseases/ebola/border-measures.html",
-      "sourceLabel": "Public Health Agency of Canada border measures"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -52,10 +46,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Greenland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://naalakkersuisut.gl/",
-      "sourceLabel": "Official entry guidance: Government of Greenland"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -68,10 +59,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Austria",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.oesterreich.gv.at/en/themen/menschen_aus_anderen_staaten/visum_fuer_oesterreich",
-      "sourceLabel": "Government of Austria — Visa for Austria (updated 26 August 2026)"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -84,10 +72,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Belgium",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://dofi.ibz.be/",
-      "sourceLabel": "Official entry guidance: Immigration Office"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -100,10 +85,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Bulgaria",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.bg/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -116,10 +98,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Croatia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://gov.hr/en/visas/1216",
-      "sourceLabel": "Official entry guidance: Government Visa Info"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -132,10 +111,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Cyprus",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.cy/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -148,10 +124,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Czech Republic",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mzv.cz/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -164,10 +137,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Denmark",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.nyidanmark.dk/",
-      "sourceLabel": "Official entry guidance: Ny i Danmark"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -180,10 +150,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Estonia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.vm.ee/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -196,10 +163,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Finland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://migri.fi/",
-      "sourceLabel": "Official entry guidance: Finnish Immigration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -212,10 +176,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "France",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://france-visas.gouv.fr/",
-      "sourceLabel": "Official entry guidance: France-Visas Official"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -228,10 +189,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Germany",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.auswaertiges-amt.de/",
-      "sourceLabel": "Official entry guidance: Federal Foreign Office"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -244,10 +202,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Greece",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gr/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -260,10 +215,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Hungary",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://konzuliszolgalat.kormany.hu/",
-      "sourceLabel": "Official entry guidance: Consular Services"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -276,10 +228,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Iceland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.utl.is/",
-      "sourceLabel": "Official entry guidance: Directorate of Immigration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -292,34 +241,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Italy",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.esteri.it/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/italy",
       "sourceLabel": "CDC Travelers’ Health — Italy profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Italy among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.esteri.it/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "latvia": {
     "name": "Latvia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.lv/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -332,10 +267,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Lithuania",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://urm.lt/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -348,10 +280,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Luxembourg",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://maee.gouvernement.lu/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -364,10 +293,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Malta",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://foreignandeu.gov.mt/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -380,10 +306,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Netherlands",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.government.nl/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -396,10 +319,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Norway",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.udi.no/",
-      "sourceLabel": "Official entry guidance: UDI Immigration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -412,10 +332,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Poland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.pl/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -428,10 +345,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Portugal",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://vistos.mne.gov.pt/",
-      "sourceLabel": "Official entry guidance: Visa Information"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -444,10 +358,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Romania",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mae.ro/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -460,10 +371,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Slovakia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mzv.sk/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -476,10 +384,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Slovenia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.si/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -492,10 +397,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Spain",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.exteriores.gob.es/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -508,10 +410,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Sweden",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.migrationsverket.se/",
-      "sourceLabel": "Official entry guidance: Migration Agency"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -524,10 +423,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Switzerland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.sem.admin.ch/",
-      "sourceLabel": "Official entry guidance: State Secretariat for Migration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -540,10 +436,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "United Kingdom",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.uk/browse/visas-immigration",
-      "sourceLabel": "Official entry guidance: GOV.UK Visas"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -556,10 +449,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Ireland",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.ireland.ie/",
-      "sourceLabel": "Official entry guidance: Department of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -572,10 +462,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Moldova",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.md/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -588,10 +475,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Russia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mid.ru/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -604,10 +488,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Turkey",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.tr/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -620,10 +501,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Armenia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.am/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -636,10 +514,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Azerbaijan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.az/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -652,24 +527,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Bahrain",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.bh/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/bahrain",
       "sourceLabel": "CDC Travelers’ Health — Bahrain profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Bahrain among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.bh/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "bangladesh": {
@@ -677,9 +541,10 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "check",
-      "detail": "The Civil Aviation Authority's passenger-form index lists a Health Declaration Form, but does not say it is mandatory for every arrival. Confirm the current requirement with CAAB or your airline before departure.",
+      "detail": "The Civil Aviation Authority lists a Health Declaration Form, but the current page does not say who must complete it or whether it is mandatory for every arrival. Check the latest CAAB or airline instruction before departure.",
       "sourceUrl": "https://ops.caab.gov.bd/group-menu-content/8/143",
-      "sourceLabel": "Civil Aviation Authority of Bangladesh — Passenger Forms (updated 27 July 2026)"
+      "sourceLabel": "Civil Aviation Authority of Bangladesh — Passenger Forms",
+      "statusLabel": "Requirement unclear"
     },
     "yellowFever": {
       "status": "conditional",
@@ -693,9 +558,12 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "All arriving travelers must submit Cambodia e-Arrival within 7 days before arrival; it combines the immigration, health, and customs forms.",
-      "sourceUrl": "https://epayment.arrival.gov.kh/",
-      "sourceLabel": "Cambodia e-Arrival portal"
+      "detail": "All travelers must submit Cambodia e-Arrival, which replaces the paper immigration, health, and customs forms. Submit within 7 days before arrival; it is free.",
+      "sourceUrl": "https://arrival.gov.kh/",
+      "sourceLabel": "Cambodia e-Arrival — official requirements and health form",
+      "statusLabel": "Required for all travelers",
+      "actionUrl": "https://arrival.gov.kh/",
+      "actionLabel": "Complete Cambodia e-Arrival"
     },
     "yellowFever": {
       "status": "conditional",
@@ -709,9 +577,9 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "none",
-      "detail": "China ended the general inbound and outbound health declaration form on 1 November 2023. Travelers with symptoms of infectious disease must still declare them to customs.",
+      "detail": "China Customs ended the general entry/exit health declaration form on 1 November 2023. Travelers with symptoms of infectious diseases must still voluntarily declare them and follow health screening instructions.",
       "sourceUrl": "https://english.www.gov.cn/news/202310/31/content_WS6540a78ec6d0868f4e8e0d15.html",
-      "sourceLabel": "State Council of China notice"
+      "sourceLabel": "State Council notice on China Customs health declarations"
     },
     "yellowFever": {
       "status": "conditional",
@@ -724,10 +592,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Georgia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.ge/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -741,25 +606,18 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "All international passengers arriving in India must submit the Air Suvidha 2.0 Passenger Health Self-Declaration before immigration clearance. Complete it online up to 24 hours before arrival; it asks about travel history, exposure, and symptoms.",
-      "sourceUrl": "https://airsuvidha.civilaviation.gov.in/",
-      "sourceLabel": "Complete the official Air Suvidha 2.0 form",
-      "secondarySourceUrl": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2277648&lang=2&reg=48",
-      "secondarySourceLabel": "Government notice: mandatory for international arrivals"
+      "statusLabel": "Required for all arrivals",
+      "detail": "India’s current outbreak-response measure requires every international arrival to submit the Air Suvidha 2.0 health self-declaration before immigration clearance. Submit before boarding; the government says it can be completed 24 hours before arrival.",
+      "actionUrl": "https://airsuvidha.civilaviation.gov.in/",
+      "actionLabel": "Complete Air Suvidha 2.0",
+      "sourceUrl": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2277648&lang=2&reg=48",
+      "sourceLabel": "Ministry of Health notice — mandatory for international arrivals (25 Jun 2026)"
     },
     "yellowFever": {
       "status": "conditional",
-      "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission (see list of countries below as specified by India): Vaccine is required for travelers ≥9 months old, and any traveler ≥9 months old arriving by air or by sea without a YF vaccination certificate will be detained in isolation for ≤6 days if they: Arrive within 6 days of leaving an area with risk for YF virus transmission, or Have been in such an area in transit (exception: passengers and members of flight crews who, while in transit through an airport in an area with risk for YF virus transmission, remained in the airport during their entire stay and the health officer agrees to such an exemption), or Arrive on a ship that started from or touched at any port in an area with risk for YF virus transmission ≤30 days before its arrival in India, unless such a ship has been disinsected in accordance with the procedure recommended by the World Health Organization (WHO), or Arrive on an aircraft that has been in an area with risk for YF virus transmission and has not been disinsected in accordance with the Indian Aircraft Public Health Rules, 1954, or as recommended by WHO. The following countries are regarded by the Government of India as areas with risk for YF virus transmission. Africa: Angola, Benin, Burkina Faso, Burundi, Cameroon, Central African Republic, Chad, Congo, Côte d’Ivoire, Democratic Republic of the Congo, Equatorial Guinea, Ethiopia, Gabon, The Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Liberia, Mali, Mauritania, Niger, Nigeria, Rwanda, Senegal, Sierra Leone, South Sudan, Sudan, Togo, Uganda Americas: Argentina, Bolivia, Brazil, Colombia, Ecuador, French Guiana, Guyana, Panama, Paraguay, Peru, Suriname, Trinidad & Tobago (Trinidad only), Venezuela Note: When a case of YF is reported from any country, the Government of India regards that country as an area with risk for YF virus transmission and adds it to the above list.",
+      "detail": "Travelers aged 9 months or older arriving from a yellow-fever risk country need a vaccination certificate; some transit routes also count. See the current risk-country list and exemptions.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/india",
       "sourceLabel": "CDC Travelers’ Health — India profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists India among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mea.gov.in/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of External Affairs"
     }
   },
   "indonesia": {
@@ -767,11 +625,14 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "International arrivals must complete the All Indonesia arrival declaration, combining immigration, customs, health, and quarantine information.",
+      "detail": "All international passengers must submit the All Indonesia arrival declaration. It combines immigration, customs, health, and quarantine information and can be completed up to 3 days before arrival or on landing.",
       "sourceUrl": "https://www.imigrasi.go.id/faq",
-      "sourceLabel": "Directorate General of Immigration FAQ",
+      "sourceLabel": "Directorate General of Immigration — All Indonesia FAQ",
       "secondarySourceUrl": "https://allindonesia.imigrasi.go.id/",
-      "secondarySourceLabel": "All Indonesia form"
+      "secondarySourceLabel": "All Indonesia form",
+      "statusLabel": "Required for all international passengers",
+      "actionUrl": "https://allindonesia.imigrasi.go.id/",
+      "actionLabel": "Complete All Indonesia declaration"
     },
     "yellowFever": {
       "status": "conditional",
@@ -784,10 +645,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Iran",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.ir/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -800,10 +658,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Iraq",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://evisa.iq/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -816,34 +671,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Israel",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.il/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/israel",
       "sourceLabel": "CDC Travelers’ Health — Israel profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Israel among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.gov.il/",
-      "secondarySourceLabel": "Official entry guidance: Government Portal"
     }
   },
   "japan": {
     "name": "Japan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.go.jp/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -856,34 +697,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Jordan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.jo/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/jordan",
       "sourceLabel": "CDC Travelers’ Health — Jordan profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Jordan among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.jo/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "kazakhstan": {
     "name": "Kazakhstan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.kz/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -896,34 +723,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Kuwait",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.kw/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/kuwait",
       "sourceLabel": "CDC Travelers’ Health — Kuwait profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Kuwait among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.kw/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "kyrgyzstan": {
     "name": "Kyrgyzstan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.evisa.e-gov.kg/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -936,10 +749,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Laos",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://laoevisa.gov.la/",
-      "sourceLabel": "Official entry guidance: E-Visa Application"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -952,12 +762,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Malaysia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "Malaysia’s current government travel checklist (updated 23 September 2026) does not list a routine health declaration. A separate MySejahtera traveller page still online describes COVID-era measures, so it is not treated as a current entry mandate.",
-      "sourceUrl": "https://www.malaysia.gov.my/en/categories/tourism/international-travel/international-travel-requirements",
-      "sourceLabel": "Malaysia.gov.my current travel requirements",
-      "secondarySourceUrl": "https://mysejahtera.malaysia.gov.my/traveler_en/",
-      "secondarySourceLabel": "Legacy MySejahtera traveller page"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -970,12 +775,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Maldives",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The required IMUGA Traveller Declaration is a general immigration declaration; the current immigration guidance does not describe it as a health declaration.",
-      "sourceUrl": "https://www2.immigration.gov.mv/tourist-visa/",
-      "sourceLabel": "Maldives Immigration tourist entry guidance",
-      "secondarySourceUrl": "https://imuga.immigration.gov.mv/traveller",
-      "secondarySourceLabel": "IMUGA Traveller Declaration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -988,10 +788,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Mongolia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://evisa.mn/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1004,10 +801,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Myanmar",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://evisa.moip.gov.mm/",
-      "sourceLabel": "Official entry guidance: E-Visa Application"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1020,10 +814,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Nepal",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.nepalimmigration.gov.np/",
-      "sourceLabel": "Official entry guidance: Department of Immigration"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1036,48 +827,26 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Oman",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.om/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old, with the addition of Rwanda and Tanzania; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/oman",
       "sourceLabel": "CDC Travelers’ Health — Oman profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Oman among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.om/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "pakistan": {
     "name": "Pakistan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://visa.nadra.gov.pk/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/pakistan",
       "sourceLabel": "CDC Travelers’ Health — Pakistan profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Pakistan among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://visa.nadra.gov.pk/",
-      "secondarySourceLabel": "Official entry guidance: E-Visa Portal"
     }
   },
   "philippines": {
@@ -1085,71 +854,44 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Arriving passengers must register through eTravel within 72 hours before arrival and complete its electronic health declaration checklist.",
+      "detail": "Arriving travelers must register in eTravel within 72 hours before arrival and submit its electronic Health Declaration Checklist. The official portal is free.",
       "sourceUrl": "https://www.etravel.gov.ph/frequently-asked-questions",
-      "sourceLabel": "Philippine eTravel FAQ"
+      "sourceLabel": "Philippine eTravel — official FAQ and health checklist",
+      "statusLabel": "Required for arriving travelers",
+      "actionUrl": "https://etravel.gov.ph/",
+      "actionLabel": "Complete Philippine eTravel"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/philippines",
       "sourceLabel": "CDC Travelers’ Health — Philippines profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Philippines among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.dfa.gov.ph/",
-      "secondarySourceLabel": "Official entry guidance: Department of Foreign Affairs"
     }
   },
   "qatar": {
     "name": "Qatar",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.qa/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/qatar",
       "sourceLabel": "CDC Travelers’ Health — Qatar profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Qatar among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.qa/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "saudi arabia": {
     "name": "Saudi Arabia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.sa/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/saudi-arabia",
       "sourceLabel": "CDC Travelers’ Health — Saudi Arabia profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Saudi Arabia among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.mofa.gov.sa/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "singapore": {
@@ -1157,9 +899,12 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Most travelers entering Singapore must submit the SG Arrival Card with its electronic health declaration within 3 days before arrival. Transit passengers who do not clear immigration are exempt.",
+      "detail": "Submit the SG Arrival Card with its electronic health declaration within 3 days before arrival. Transit passengers who do not clear immigration and certain residents entering by land are exempt.",
       "sourceUrl": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
-      "sourceLabel": "Singapore ICA SG Arrival Card guidance"
+      "sourceLabel": "Singapore ICA — SG Arrival Card with Electronic Health Declaration",
+      "statusLabel": "Required for most arrivals",
+      "actionUrl": "https://eservices.ica.gov.sg/sgarrivalcard/",
+      "actionLabel": "Submit Singapore SG Arrival Card"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1173,9 +918,10 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "conditional",
-      "detail": "Travelers who visited areas currently designated by KDCA may need to submit Q-CODE or a health declaration. The designated-area list changes over time.",
-      "sourceUrl": "https://travelhealth.kdca.go.kr/travel/cd/qcoInfo.do?lang=en",
-      "sourceLabel": "Korea Disease Control and Prevention Agency Q-CODE"
+      "detail": "Korea requires a Q-CODE or health declaration from travelers who visited designated quarantine areas. For some designated areas, symptoms also trigger the form. KDCA changes the area list over time; check its current designation.",
+      "sourceUrl": "https://www.kdca.go.kr/bbs/kdca/50/310347/download.do",
+      "sourceLabel": "KDCA current quarantine-area list (20 Oct 2026)",
+      "statusLabel": "Depends on recent route and symptoms"
     },
     "yellowFever": {
       "status": "none",
@@ -1188,10 +934,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Sri Lanka",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The Ministry of Health's ports and airports page links a Health Declaration Forms section but does not state that a form is required for routine arrivals. Confirm current guidance if your route is affected by an outbreak.",
-      "sourceUrl": "https://www.health.gov.lk/health-services-at-ports-airports/",
-      "sourceLabel": "Sri Lanka Ministry of Health — Ports and Airports"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1204,34 +947,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Taiwan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://visawebapp.boca.gov.tw/",
-      "sourceLabel": "Official entry guidance: E-Visa Application"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/taiwan",
       "sourceLabel": "CDC Travelers’ Health — Taiwan profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Taiwan among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://visawebapp.boca.gov.tw/",
-      "secondarySourceLabel": "Official entry guidance: E-Visa Application"
     }
   },
   "tajikistan": {
     "name": "Tajikistan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.evisa.tj/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1244,10 +973,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Thailand",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "required",
-      "detail": "All non-Thai nationals must submit the Thailand Digital Arrival Card before entry. Its health section prompts for extra information when recent travel, nationality, or flight is on the Ministry of Public Health list.",
+      "status": "conditional",
+      "detail": "All non-Thai nationals must submit TDAC within 3 days before entry. Its health section asks for additional health information when recent travel, departure country, nationality, or flight matches a Ministry of Public Health list.",
       "sourceUrl": "https://tdac.immigration.go.th/manual/en/faq.html",
-      "sourceLabel": "Thai Immigration TDAC official FAQ"
+      "sourceLabel": "Thai Immigration — TDAC requirements and health declaration",
+      "statusLabel": "Health questions depend on route",
+      "actionUrl": "https://tdac.immigration.go.th/arrival-card/",
+      "actionLabel": "Complete Thailand Digital Arrival Card"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1268,34 +1000,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "United Arab Emirates",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://u.ae/",
-      "sourceLabel": "Official entry guidance: UAE Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/united-arab-emirates",
       "sourceLabel": "CDC Travelers’ Health — United Arab Emirates profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists United Arab Emirates among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://u.ae/",
-      "secondarySourceLabel": "Official entry guidance: UAE Government Portal"
     }
   },
   "uzbekistan": {
     "name": "Uzbekistan",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://e-visa.gov.uz/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1324,10 +1042,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "South Africa",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The Department of Health’s September 2026 traveller protocols do not list a routine digital health declaration form. Follow any temporary route-specific instructions.",
-      "sourceUrl": "https://www.health.gov.za/wp-content/uploads/2026/09/Protocols-for-Travellers.pdf",
-      "sourceLabel": "South African Department of Health traveller protocols"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1340,10 +1055,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Egypt",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://visa2egypt.gov.eg/eVisa/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1356,12 +1068,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Kenya",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "required",
-      "detail": "The Ministry of Health lists a locator form for air passengers and a traveler surveillance form for land crossings. Ebola screening is heightened for some recent travel routes.",
-      "sourceUrl": "https://www.health.go.ke/travelers-information",
-      "sourceLabel": "Kenya Ministry of Health traveler information",
+      "status": "conditional",
+      "detail": "Kenya’s Port Health FAQ says officers may require a health declaration based on your health status or recent exposure; the Ministry also reports heightened screening for travelers on specified Ebola-affected routes. It does not say every passenger must pre-submit a form.",
+      "sourceUrl": "https://porthealth.health.go.ke/faqs",
+      "sourceLabel": "Kenya Ministry of Health — Port Health FAQ",
       "secondarySourceUrl": "https://www.health.go.ke/kenya-strengthens-ebola-preparedness-and-contact-tracing",
-      "secondarySourceLabel": "MoH Ebola screening update"
+      "secondarySourceLabel": "Ministry update on route-based screening (7 Oct 2026)",
+      "statusLabel": "May be required after screening"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1406,10 +1119,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Morocco",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.diplomatie.ma/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1422,10 +1132,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Ethiopia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://mfa.gov.et/travellocation/",
-      "sourceLabel": "Ethiopian Ministry of Foreign Affairs — Travel Location"
+      "status": "check",
+      "statusLabel": "Official form; scope unclear",
+      "detail": "Ethiopian Public Health Institute provides an active traveler health declaration for air and land arrivals, but the public portal does not say which travelers must submit it. Check with EPHI or your airline before departure.",
+      "sourceUrl": "https://e-thtp.ephi.gov.et/",
+      "sourceLabel": "Ethiopian Public Health Institute — Travelers Health Declaration",
+      "actionUrl": "https://e-thtp.ephi.gov.et/",
+      "actionLabel": "Open EPHI declaration portal"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1438,16 +1151,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Ghana",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.gh/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "required",
-      "detail": "Vaccine is required for all arriving travelers ≥9 months old.",
-      "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/ghana",
-      "sourceLabel": "CDC Travelers’ Health — Ghana profile"
+      "detail": "Ghana Immigration says a valid yellow-fever vaccination certificate is required for entry and may be checked at the port of entry.",
+      "sourceUrl": "https://evisa.immigration.gov.gh/eta-applicant-guide.html",
+      "sourceLabel": "Ghana Immigration Service — official ETA guidance"
     }
   },
   "tanzania": {
@@ -1455,11 +1165,14 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Mainland Tanzania requires all travelers to submit the Traveller’s Health Surveillance Form before departure or upon arrival. Zanzibar operates a separate Public Health Surveillance Form portal; its Ministry says to submit online within 24 hours before arrival.",
-      "sourceUrl": "https://moh.go.tz/releases",
-      "sourceLabel": "Tanzania Ministry of Health releases",
+      "detail": "Ministry of Health Travel Advisory No. 18 (17 Oct 2026) requires all travelers to Mainland Tanzania to submit the online Traveller’s Health Surveillance Form before departure or on arrival. Keep its QR code or reference number. Zanzibar has a separate health form.",
+      "sourceUrl": "https://www.moh.go.tz/storage/app/uploads/public/6ad/342/9a7/6ad3429a7996c028117271.pdf",
+      "sourceLabel": "Tanzania Ministry of Health — Travel Advisory No. 18 (17 Oct 2026)",
       "secondarySourceUrl": "https://healthtravelznz.mohz.go.tz/traveller/",
-      "secondarySourceLabel": "Zanzibar Ministry of Health form portal"
+      "secondarySourceLabel": "Zanzibar Ministry of Health — separate health form",
+      "statusLabel": "Required for all travelers to Mainland Tanzania",
+      "actionUrl": "https://afyamsafiri.moh.go.tz/",
+      "actionLabel": "Complete Mainland Tanzania health form"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1469,45 +1182,37 @@ window.VISA_GUIDE_HEALTH = {
     },
     "special": {
       "status": "conditional",
-      "detail": "Mainland Tanzania requires health screening at all points of entry, with 21-day follow-up for high-risk travelers under Advisory No. 18. Zanzibar uses a separate Ministry of Health system and may apply additional route-based Ebola procedures.",
-      "sourceUrl": "https://moh.go.tz/releases",
-      "sourceLabel": "Tanzania Ministry of Health Travel Advisory No. 18",
+      "detail": "Health screening, including temperature checks, applies at all points of entry. Daily follow-up for 21 days applies only to high-risk travelers. Zanzibar maintains a separate health authority and declaration form.",
+      "sourceUrl": "https://www.moh.go.tz/storage/app/uploads/public/6ad/342/9a7/6ad3429a7996c028117271.pdf",
+      "sourceLabel": "Tanzania Ministry of Health — Travel Advisory No. 18 (17 Oct 2026)",
       "secondarySourceUrl": "https://healthtravelznz.mohz.go.tz/traveller/",
-      "secondarySourceLabel": "Zanzibar Ministry of Health portal"
+      "secondarySourceLabel": "Zanzibar Ministry of Health — separate health form"
     }
   },
   "uganda": {
     "name": "Uganda",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://visas.immigration.go.ug/",
-      "sourceLabel": "Official entry guidance: E-Visa Application"
+      "status": "required",
+      "statusLabel": "CAA directive requires a form at Entebbe",
+      "detail": "Uganda’s Civil Aviation Authority’s published directive says all travelers through Entebbe must pre-fill a passenger locator form. The directive is tied to 2026 Ebola measures, so confirm it is still in effect before travel.",
+      "sourceUrl": "https://caa.go.ug/s04-26-bundibugyo-ebola-virus-disease-buevd-health-measures-for-entebbe-international-airport/",
+      "sourceLabel": "Uganda Civil Aviation Authority — S04/26 directive (1 Jun 2026)",
+      "actionUrl": "https://evd.health.go.ug/declare/?lang=en",
+      "actionLabel": "Open Uganda traveler health form"
     },
     "yellowFever": {
-      "status": "required",
-      "detail": "Vaccine is required for all arriving travelers ≥1 year old.",
-      "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/uganda",
-      "sourceLabel": "CDC Travelers’ Health — Uganda profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report says Uganda continued health screening at ports of entry and temporary travel measures involving the DRC after the local outbreak was declared over. Confirm the current route conditions with Ugandan authorities.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://visas.immigration.go.ug/",
-      "secondarySourceLabel": "Uganda official immigration / visa portal"
+      "status": "none",
+      "detail": "Uganda Immigration announced on 2 October 2026 that a yellow-fever vaccination certificate is no longer mandatory for entry.",
+      "sourceUrl": "https://immigration.go.ug/node/254",
+      "sourceLabel": "Uganda National Citizenship and Immigration Control — official notice (2 Oct 2026)"
     }
   },
   "rwanda": {
     "name": "Rwanda",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The latest posted Rwanda Biomedical Centre notice does not list a general health declaration form. It does set route-based Ebola entry restrictions; see the separate rule below.",
-      "sourceUrl": "https://www.rbc.gov.rw/PHSEPR/about-ebola-2/",
-      "sourceLabel": "Rwanda Biomedical Centre Ebola notice"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1528,34 +1233,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Botswana",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.bw/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/botswana",
       "sourceLabel": "CDC Travelers’ Health — Botswana profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Botswana among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.gov.bw/",
-      "secondarySourceLabel": "Official entry guidance: Government Portal"
     }
   },
   "namibia": {
     "name": "Namibia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mha.gov.na/",
-      "sourceLabel": "Official entry guidance: Home Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1568,10 +1259,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Seychelles",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mofa.gov.sc/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1585,9 +1273,12 @@ window.VISA_GUIDE_HEALTH = {
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "The 2026 Quarantine (Health Declaration Form) Regulations require all passengers to submit the All-in-One Travel Form and Health Declaration Form before boarding an aircraft or vessel to Mauritius.",
+      "detail": "Mauritius requires all passengers to complete the All-in-One Travel Form and Health Declaration Form before boarding an aircraft or vessel bound for Mauritius under the 2026 Quarantine Regulations.",
       "sourceUrl": "https://passport.govmu.org/passport/?p=1494",
-      "sourceLabel": "Mauritius Passport and Immigration Office"
+      "sourceLabel": "Passport and Immigration Office — 2026 Health and Entry Regulations",
+      "statusLabel": "Required before boarding",
+      "actionUrl": "https://safemauritius.govmu.org/",
+      "actionLabel": "Complete the free Mauritius health form"
     },
     "yellowFever": {
       "status": "none",
@@ -1597,9 +1288,9 @@ window.VISA_GUIDE_HEALTH = {
     },
     "special": {
       "status": "conditional",
-      "detail": "Foreign nationals who have been in the DRC, Uganda, or South Sudan in the past 21 days are temporarily barred from entry. Eligible Mauritian nationals and permit holders may enter but must quarantine for 21 days.",
+      "detail": "Temporary Ebola measures bar most foreign nationals who have been in the DRC, Uganda, or South Sudan during the previous 21 days. Mauritian nationals and eligible permit holders may enter subject to 21-day quarantine. Confirm the current advisory before travel.",
       "sourceUrl": "https://passport.govmu.org/passport/?p=1494",
-      "sourceLabel": "Mauritius Passport and Immigration Office route measures",
+      "sourceLabel": "Passport and Immigration Office — 2026 Health and Entry Regulations",
       "secondarySourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
       "secondarySourceLabel": "ECDC week 42 summary (10–16 October 2026)"
     }
@@ -1608,10 +1299,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Zimbabwe",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.evisa.gov.zw/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1624,10 +1312,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Zambia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.zambiaimmigration.gov.zm/",
-      "sourceLabel": "Official entry guidance: Immigration Department"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1640,10 +1325,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Senegal",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.diplomatie.gouv.sn/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1656,34 +1338,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Tunisia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.diplomatie.gov.tn/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/tunisia",
       "sourceLabel": "CDC Travelers’ Health — Tunisia profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Tunisia among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.diplomatie.gov.tn/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "australia": {
     "name": "Australia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://immi.homeaffairs.gov.au/",
-      "sourceLabel": "Official entry guidance: Home Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1696,12 +1364,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "New Zealand",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The mandatory NZ Traveller Declaration covers travel, immigration, customs, and biosecurity; New Zealand does not list it as a separate health declaration.",
-      "sourceUrl": "https://www.travellerdeclaration.govt.nz/",
-      "sourceLabel": "New Zealand Traveller Declaration",
-      "secondarySourceUrl": "https://www.customs.govt.nz/about-us/new-zealand-traveller-declaration",
-      "secondarySourceLabel": "New Zealand Customs data-use guidance"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1714,10 +1377,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Fiji",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.immigration.gov.fj/",
-      "sourceLabel": "Official entry guidance: Immigration Department"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1730,10 +1390,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Papua New Guinea",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.immigration.gov.pg/",
-      "sourceLabel": "Official entry guidance: Immigration Authority"
+      "status": "required",
+      "statusLabel": "Required for every arriving passenger",
+      "detail": "Papua New Guinea requires every arriving passenger to submit the Digital Arrival Card. It includes health and quarantine questions and can be completed within 72 hours before arrival.",
+      "sourceUrl": "https://ica.gov.pg/dac/png-digital-arrival-card",
+      "sourceLabel": "Papua New Guinea Immigration & Citizenship Service Authority — arrival card guidance",
+      "actionUrl": "https://pngdac.ica.gov.pg/",
+      "actionLabel": "Complete PNG Digital Arrival Card"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1746,10 +1409,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Samoa",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.ws/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1762,10 +1422,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Tonga",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mfa.gov.to/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1778,10 +1435,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Vanuatu",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.immigration.gov.vu/",
-      "sourceLabel": "Official entry guidance: Immigration Department"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -1794,34 +1448,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Bahamas",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.bahamas.gov.bs/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/the-bahamas",
       "sourceLabel": "CDC Travelers’ Health — Bahamas profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Bahamas among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.bahamas.gov.bs/",
-      "secondarySourceLabel": "Official entry guidance: Government Portal"
     }
   },
   "jamaica": {
     "name": "Jamaica",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://mfaft.gov.jm/site/visas/",
-      "sourceLabel": "Official entry guidance: Visa Information"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1834,10 +1474,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Dominican Republic",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mirex.gob.do/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1850,10 +1487,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Barbados",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.foreign.gov.bb/",
-      "sourceLabel": "Official entry guidance: Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1866,10 +1500,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Saint Lucia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.govt.lc/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1882,10 +1513,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Antigua and Barbuda",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.ab.gov.ag/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1898,10 +1526,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Grenada",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.gd/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1914,10 +1539,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Dominica",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.dominica.gov.dm/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1930,34 +1552,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Saint Vincent and the Grenadines",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.vc/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/saint-vincent-and-the-grenadines",
       "sourceLabel": "CDC Travelers’ Health — Saint Vincent and the Grenadines profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Saint Vincent and the Grenadines among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.gov.vc/",
-      "secondarySourceLabel": "Official entry guidance: Government Portal"
     }
   },
   "aruba": {
     "name": "Aruba",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.government.aw/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1970,10 +1578,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Curaçao",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.curacao.gov.cw/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -1986,10 +1591,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Cayman Islands",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.ky/",
-      "sourceLabel": "Official entry guidance: Government Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2002,10 +1604,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Bermuda",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www2.gov.bm/visitors",
-      "sourceLabel": "Government of Bermuda — Visitor information"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2018,10 +1617,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Argentina",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://cancilleria.gob.ar/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2034,26 +1630,22 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Bolivia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.rree.gob.bo/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
-      "status": "required",
-      "detail": "Vaccine is required for all arriving travelers ≥1 year old. Country entry requirements are subject to change. Check with the embassies or consulates on your itinerary to confirm entry requirements before departure.",
-      "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/bolivia",
-      "sourceLabel": "CDC Travelers’ Health — Bolivia profile"
+      "status": "conditional",
+      "displayOnCard": true,
+      "statusLabel": "Designated risk areas only",
+      "detail": "Bolivia does not require every visitor to present a yellow-fever certificate at the border. Its consular guidance lists proof for travelers whose itinerary includes designated high-risk endemic areas.",
+      "sourceUrl": "https://cancilleria.gob.bo/mre/servicios/",
+      "sourceLabel": "Bolivia Ministry of Foreign Affairs — consular requirements"
     }
   },
   "brazil": {
     "name": "Brazil",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gov.br/mre/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2066,10 +1658,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Chile",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.minrel.gob.cl/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2082,26 +1671,22 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Colombia",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.cancilleria.gov.co/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
-      "status": "required",
-      "detail": "Vaccine is required for all arriving travelers ≥1 year old. Country entry requirements are subject to change. Check with the embassies or consulates on your itinerary to confirm entry requirements before departure.",
-      "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/colombia",
-      "sourceLabel": "CDC Travelers’ Health — Colombia profile"
+      "status": "conditional",
+      "displayOnCard": true,
+      "statusLabel": "Local risk areas only",
+      "detail": "Colombia does not require a yellow-fever certificate to enter the country. The Ministry of Health says proof may be requested at health controls for designated very-high-risk municipalities.",
+      "sourceUrl": "https://www2.minsalud.gov.co/salud/publica/PET/Paginas/fiebre-amarilla.aspx",
+      "sourceLabel": "Colombia Ministry of Health — yellow-fever entry guidance"
     }
   },
   "costa rica": {
     "name": "Costa Rica",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.rree.go.cr/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2114,10 +1699,13 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Cuba",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://evisacuba.cu/",
-      "sourceLabel": "Official entry guidance: E-Visa Cuba"
+      "status": "required",
+      "statusLabel": "Required entry form",
+      "detail": "Cuba’s government travel guidance lists the Traveler’s Health Declaration and D’Viajeros QR code among the documents required to enter. Complete the digital form before travel.",
+      "sourceUrl": "https://www.cuba.travel/en/useful-information/regulations-and-formalities",
+      "sourceLabel": "Cuba Travel — government entry formalities",
+      "actionUrl": "https://dviajeros.mitrans.gob.cu/",
+      "actionLabel": "Complete D’Viajeros"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2130,10 +1718,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Ecuador",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://serviciosdigitales.cancilleria.gob.ec/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2146,34 +1731,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "El Salvador",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.rree.gob.sv/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
       "detail": "Direct travel from United States: Vaccine is not required. Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/el-salvador",
       "sourceLabel": "CDC Travelers’ Health — El Salvador profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists El Salvador among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.rree.gob.sv/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "guatemala": {
     "name": "Guatemala",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.minex.gob.gt/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2186,10 +1757,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Honduras",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.sre.gob.hn/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2202,34 +1770,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Mexico",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gob.mx/inm/documentos/si-deseas-visitar-mexico-consulta-nuestra-guia-del-viajero",
-      "sourceLabel": "Mexico National Migration Institute traveler guide"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico",
       "sourceLabel": "CDC Travelers’ Health — Mexico profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Mexico among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://www.gob.mx/sre/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
     }
   },
   "nicaragua": {
     "name": "Nicaragua",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.rree.gob.ni/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2258,10 +1812,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Paraguay",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mre.gov.py/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2274,10 +1825,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Peru",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gob.pe/rree",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2290,10 +1838,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Suriname",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://suriname.vfsevisa.com/",
-      "sourceLabel": "Official entry guidance: E-Visa Portal"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",
@@ -2306,34 +1851,20 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Trinidad and Tobago",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://nationalsecurity.gov.tt/",
-      "sourceLabel": "Official entry guidance: Ministry of National Security"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
       "detail": "CDC lists no yellow-fever vaccination certificate requirement for entry.",
       "sourceUrl": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/trinidad-and-tobago",
       "sourceLabel": "CDC Travelers’ Health — Trinidad and Tobago profile"
-    },
-    "special": {
-      "status": "conditional",
-      "detail": "ECDC’s week 42 report (10–16 October 2026) lists Trinidad and Tobago among destinations using health screening or entry restrictions for travelers from Ebola high-risk areas. The summary does not specify every covered route or measure; check the official entry authority for current instructions.",
-      "sourceUrl": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
-      "sourceLabel": "ECDC week 42 Ebola travel-measures summary",
-      "secondarySourceUrl": "https://nationalsecurity.gov.tt/",
-      "secondarySourceLabel": "Official entry guidance: Ministry of National Security"
     }
   },
   "uruguay": {
     "name": "Uruguay",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.gub.uy/ministerio-relaciones-exteriores/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "none",
@@ -2346,10 +1877,7 @@ window.VISA_GUIDE_HEALTH = {
     "name": "Venezuela",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mppre.gob.ve/",
-      "sourceLabel": "Official entry guidance: Ministry of Foreign Affairs"
+      "status": "unreported"
     },
     "yellowFever": {
       "status": "conditional",

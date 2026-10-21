@@ -237,9 +237,20 @@
             border-radius: 7px;
             font-size: 0.83rem;
         }
+        .health-details--required { border-color: #d8ad57; background: #fffaf0; }
+        .health-details--required h4 { color: #573800; }
         .health-details h4 { margin-bottom: 8px; font-size: 0.9rem; color: var(--ink); }
         .health-row { margin-top: 7px; color: var(--muted); }
         .health-row strong { color: var(--ink); }
+        .health-row--required {
+            display: block;
+            padding: 12px;
+            border: 1px solid #e5c982;
+            border-left: 4px solid #a36b0b;
+            border-radius: 7px;
+            background: #fff;
+            color: #3e4652;
+        }
         .health-status {
             display: inline-block;
             margin-right: 4px;
@@ -255,6 +266,19 @@
         .health-status--none-listed { background: #edf0f4; color: #4c5968; }
         .health-status--check { background: #fbefd7; color: #7f5410; }
         .health-source { color: var(--primary); font-weight: 700; }
+        .health-action-link {
+            display: inline-block;
+            margin: 9px 8px 0 0;
+            padding: 8px 11px;
+            border-radius: 6px;
+            background: var(--primary);
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .health-action-link:hover { background: var(--primary-dark); }
+        .health-action-link:focus-visible,
+        .health-source:focus-visible { outline: 3px solid #e0a52e; outline-offset: 2px; }
         .health-checked { margin-top: 9px; color: var(--subtle); font-size: 0.76rem; }
         
         .note {
@@ -477,7 +501,7 @@
             </div>
         </div>
 
-        <p class="health-methodology"><strong>Health information:</strong> Health declarations and destination-specific entry rules are shown below. Yellow-fever certificates appear only when an official rule applies to all travelers or depends on route. Temporary requirements can change, so confirm current rules with the linked authority before travel. Sources were checked 21 October 2026.</p>
+        <p class="health-methodology"><strong>Health information:</strong> Form links appear when an official destination source lists an arrival form; each row states who must file when the source makes that clear. No health row is not proof that no form exists. Yellow-fever certificates appear here only when required for all arrivals or for travel to designated risk areas. Route-only certificate rules are not repeated on every card. If your route includes a yellow-fever-risk country, check the <a href="https://wwwnc.cdc.gov/travel/destinations/list/" target="_blank" rel="noopener noreferrer">CDC destination guidance</a> for your itinerary.</p>
         
         <!-- NORTH AMERICA -->
         <section id="north-america" class="region-section">
@@ -1677,7 +1701,7 @@
         </footer>
     </div>
 
-    <script src="health-data.js?v=20261021"></script>
+    <script src="health-data.js?v=20261021-audit2"></script>
     <script>
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
@@ -1851,13 +1875,12 @@
             required: 'Required',
             conditional: 'Route-dependent',
             none: 'Not required',
-            'none-listed': 'No general form listed',
-            check: 'Check current rule'
+            check: 'Requirement unclear'
         };
 
         function createHealthRow(label, item) {
             const row = document.createElement('p');
-            row.className = 'health-row';
+            row.className = `health-row${item.status === 'required' ? ' health-row--required' : ''}`;
 
             const title = document.createElement('strong');
             title.textContent = `${label}: `;
@@ -1871,6 +1894,16 @@
             const detail = document.createElement('span');
             detail.textContent = ` ${item.detail}`;
             row.appendChild(detail);
+
+            if (item.actionUrl && item.actionLabel) {
+                const action = document.createElement('a');
+                action.className = 'health-action-link';
+                action.href = item.actionUrl;
+                action.target = '_blank';
+                action.rel = 'noopener noreferrer';
+                action.textContent = item.actionLabel;
+                row.appendChild(action);
+            }
 
             const source = document.createElement('a');
             source.className = 'health-source';
@@ -1900,16 +1933,22 @@
                     console.error(`Missing health record for ${slug}`);
                     return;
                 }
+                const hasDeclarationStatus = record.declaration.status !== 'unreported';
+                const hasYellowFeverEntryRule = record.yellowFever.status === 'required' || record.yellowFever.displayOnCard === true;
+                if (!hasDeclarationStatus && !hasYellowFeverEntryRule && !record.special) return;
 
                 const section = document.createElement('section');
                 section.className = 'health-details';
+                if (record.declaration.status === 'required') section.classList.add('health-details--required');
                 section.setAttribute('aria-label', 'Health declaration and entry information');
 
                 const heading = document.createElement('h4');
-                heading.textContent = 'Health forms and entry rules';
+                heading.textContent = record.declaration.status === 'required'
+                    ? 'Health declaration — action required'
+                    : 'Health forms and entry rules';
                 section.appendChild(heading);
-                section.appendChild(createHealthRow('Health declaration', record.declaration));
-                if (record.yellowFever.status === 'required' || record.yellowFever.status === 'conditional') {
+                if (hasDeclarationStatus) section.appendChild(createHealthRow('Health declaration', record.declaration));
+                if (hasYellowFeverEntryRule) {
                     section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
                 }
                 if (record.special) section.appendChild(createHealthRow('Other route-based rule', record.special));
