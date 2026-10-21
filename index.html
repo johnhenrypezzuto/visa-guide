@@ -1706,7 +1706,7 @@
         </footer>
     </div>
 
-    <script src="health-data.js?v=20261021-audit3"></script>
+    <script src="health-data.js?v=20261021-audit17"></script>
     <script>
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
@@ -1940,7 +1940,8 @@
                 }
                 const hasDeclarationStatus = record.declaration.status !== 'unreported';
                 const hasYellowFeverEntryRule = record.yellowFever.status === 'required' || record.yellowFever.displayOnCard === true;
-                if (!hasDeclarationStatus && !hasYellowFeverEntryRule && !record.special) return;
+                const specialRules = Array.isArray(record.special) ? record.special : (record.special ? [record.special] : []);
+                if (!hasDeclarationStatus && !hasYellowFeverEntryRule && !specialRules.length) return;
 
                 const section = document.createElement('section');
                 section.className = 'health-details';
@@ -1956,7 +1957,7 @@
                 if (hasYellowFeverEntryRule) {
                     section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
                 }
-                if (record.special) section.appendChild(createHealthRow('Other route-based rule', record.special));
+                specialRules.forEach(rule => section.appendChild(createHealthRow(rule.label || 'Other route-based rule', rule)));
 
                 const checked = document.createElement('p');
                 checked.className = 'health-checked';
