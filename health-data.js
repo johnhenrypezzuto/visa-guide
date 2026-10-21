@@ -740,10 +740,12 @@ window.VISA_GUIDE_HEALTH = {
     "name": "India",
     "lastChecked": "21 October 2026",
     "declaration": {
-      "status": "none-listed",
-      "detail": "The official entry information linked for this destination does not list a routine nationwide health declaration. Temporary measures can still depend on route, symptoms, or outbreaks.",
-      "sourceUrl": "https://www.mea.gov.in/",
-      "sourceLabel": "Official entry guidance: Ministry of External Affairs"
+      "status": "required",
+      "detail": "All international passengers arriving in India must submit the Air Suvidha 2.0 Passenger Health Self-Declaration before immigration clearance. Complete it online up to 24 hours before arrival; it asks about travel history, exposure, and symptoms.",
+      "sourceUrl": "https://airsuvidha.civilaviation.gov.in/",
+      "sourceLabel": "Complete the official Air Suvidha 2.0 form",
+      "secondarySourceUrl": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2277648&lang=2&reg=48",
+      "secondarySourceLabel": "Government notice: mandatory for international arrivals"
     },
     "yellowFever": {
       "status": "conditional",
