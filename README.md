@@ -2,6 +2,8 @@
 
 A comprehensive travel visa resource website with official government links for visa applications and digital arrival cards.
 
+**Live website:** https://johnhenrypezzuto.github.io/visa-guide/
+
 ## 📁 Structure
 
 ```
@@ -12,7 +14,7 @@ visa-guide/
 
 ## 🌍 Coverage
 
-The website includes official visa and e-visa links for **128+ countries** across 7 regions:
+The website includes **132 destination cards** across 7 regions:
 
 ### North America (3 countries)
 - United States (ESTA, USCIS)
@@ -61,12 +63,23 @@ Each country card includes up to three types of links:
 2. **💻 E-Visa Portal** (Blue) - Online visa application systems
 3. **📱 Digital Arrival Card** (Yellow) - Electronic arrival/departure cards
 
+## 🩺 Health Information
+
+Each destination card also shows:
+
+- Health declaration form status
+- Health-related entry requirements, including route-dependent rules where verified
+- Destination-government source links and a per-destination review date; unverified items link to an official travel or immigration page for confirmation
+
+Information without a current supporting government source is labeled **Not verified**. Travelers should confirm current requirements with the linked authority before departure.
+
 ## 🎨 Features
 
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Quick Navigation** - Jump links to each region
 - **Visual Legend** - Color-coded link types
 - **Country Flags** - Easy visual identification
+- **Health Filter** - Find destinations with required, conditional, or unverified health information
 - **Hover Effects** - Interactive card animations
 - **External Links** - All links open in new tabs
 
@@ -76,8 +89,10 @@ To update the website:
 
 1. Edit `index.html` directly
 2. Update country information, links, or add new countries
-3. Update the "Last Updated" date in the footer
-4. Test all links periodically
+3. Update the country's health declaration and entry-rule record using destination-government sources; leave unsupported details marked "Not verified"
+4. Set a country-specific `lastChecked` date in `healthRecords` when you verify its sources; unverified records use `healthCheckedDate` as the fallback date
+5. Update the "Last Updated" date in the footer
+6. Test all links periodically
 
 ## 🚀 Deployment
 
@@ -94,4 +109,4 @@ Free to use and modify for personal or commercial purposes.
 
 ---
 
-**Last Updated:** May 2026
+**Last Updated:** October 2026
