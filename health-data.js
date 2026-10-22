@@ -1101,14 +1101,10 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for arriving travelers",
-      "detail": "Complete Oman’s electronic health declaration on or before arrival.",
+      "statusLabel": "Required",
+      "detail": "Complete the electronic health declaration by arrival.",
       "sourceUrl": "https://www.moh.gov.om/en/media-center/news/notice-to-arriving-travelers-to-sultanate-of-oman/",
-      "sourceLabel": "Oman Ministry of Health — arrival notice, 22 June 2026",
-      "secondarySourceUrl": "https://www.omanobserver.om/ampArticle/1191648",
-      "secondarySourceLabel": "Oman Observer — details of the CAA route-based circular",
-      "actionUrl": "https://www.moh.gov.om/en/media-center/news/notice-to-arriving-travelers-to-sultanate-of-oman/",
-      "actionLabel": "Read Oman Ministry of Health arrival notice"
+      "sourceLabel": "Oman Ministry of Health — arrival notice, 22 June 2026"
     },
     "yellowFever": {
       "status": "conditional",
