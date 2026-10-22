@@ -797,9 +797,9 @@ window.VISA_GUIDE_HEALTH =
     },
     "special": {
       "status": "required",
-      "statusLabel": "Required for tourists",
+      "statusLabel": "Required",
       "label": "Tourist health insurance",
-      "detail": "Tourists must carry health and accident insurance for the full stay, with at least GEL 30,000 coverage.",
+      "detail": "Minimum GEL 30,000 coverage for the full stay.",
       "sourceUrl": "https://switzerland.mfa.gov.ge/en/news/370174-saqartveloshi-mogzaurobis-sakuradghebod",
       "sourceLabel": "Embassy of Georgia — mandatory insurance for tourists"
     }
