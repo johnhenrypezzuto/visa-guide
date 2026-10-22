@@ -217,61 +217,24 @@
             outline-offset: 2px;
         }
         .filter-summary { margin: 7px 0 0; color: var(--muted); font-size: 0.86rem; }
-        .health-methodology {
-            margin: 0 0 20px;
-            padding: 14px 16px;
-            border: 1px solid #d4e1e7;
-            border-left: 4px solid var(--primary);
-            border-radius: 8px;
-            background: #f1f6f8;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-        .health-methodology strong { color: var(--ink); }
-        .search-result-health {
-            display: block;
-            margin-top: 3px;
-            color: #7a4b00;
-            font-size: 0.78rem;
-            font-weight: 700;
-        }
-
         .health-details {
-            margin-top: 12px;
-            padding: 12px;
-            background: #f1f6f8;
-            border: 1px solid #d4e1e7;
-            border-radius: 7px;
+            margin-top: 18px;
+            padding: 14px 0 0;
+            background: transparent;
+            border: 0;
+            border-top: 1px solid #d4e1e7;
             font-size: 0.83rem;
         }
-        .health-details--required { border-color: #d8ad57; background: #fffaf0; }
-        .health-details--required h4 { color: #573800; }
         .health-details h4 { margin-bottom: 8px; font-size: 0.9rem; color: var(--ink); }
         .health-row { margin-top: 7px; color: var(--muted); }
         .health-row strong { color: var(--ink); }
-        .health-row--required {
-            display: block;
-            padding: 12px;
-            border: 1px solid #e5c982;
-            border-left: 4px solid #a36b0b;
-            border-radius: 7px;
-            background: #fff;
-            color: #3e4652;
-        }
         .health-status {
             display: inline-block;
             margin-right: 4px;
-            padding: 1px 6px;
-            border-radius: 999px;
-            font-size: 0.72rem;
+            color: var(--primary-dark);
+            font-size: inherit;
             font-weight: 700;
-            vertical-align: 1px;
         }
-        .health-status--required { background: #f7e4e4; color: #873232; }
-        .health-status--conditional { background: #fbefd7; color: #7f5410; }
-        .health-status--none { background: #e4f4ed; color: #176346; }
-        .health-status--none-listed { background: #edf0f4; color: #4c5968; }
-        .health-status--check { background: #fbefd7; color: #7f5410; }
         .health-source { color: var(--primary); font-weight: 700; }
         .health-action-link {
             display: inline-block;
@@ -460,7 +423,7 @@
     <div class="container">
         <header>
             <h1>Global Visa Guide</h1>
-            <p class="subtitle">Official Government Visa, E-Visa, Arrival Card & Health Entry Information</p>
+            <p class="subtitle">Find official visa, e-visa, and arrival card information</p>
             
             <div class="citizenship-selector">
                 <label for="citizenshipSelect">Passport:</label>
@@ -1706,7 +1669,7 @@
         </footer>
     </div>
 
-    <script src="health-data.js?v=20261021-audit17"></script>
+    <script src="health-data.js?v=20261021-health-cleanup1"></script>
     <script>
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
@@ -1878,14 +1841,12 @@
 
         const healthStatusLabels = {
             required: 'Required',
-            conditional: 'Route-dependent',
-            none: 'Not required',
-            check: 'Requirement unclear'
+            conditional: 'Route-dependent'
         };
 
         function createHealthRow(label, item) {
             const row = document.createElement('p');
-            row.className = `health-row${item.status === 'required' ? ' health-row--required' : ''}`;
+            row.className = 'health-row';
 
             const title = document.createElement('strong');
             title.textContent = `${label}: `;
@@ -1907,16 +1868,22 @@
                 action.target = '_blank';
                 action.rel = 'noopener noreferrer';
                 action.textContent = item.actionLabel;
+                if (item.actionUrl === item.sourceUrl) {
+                    action.setAttribute('aria-label', `${label} — ${item.sourceLabel}`);
+                }
                 row.appendChild(action);
             }
 
-            const source = document.createElement('a');
-            source.className = 'health-source';
-            source.href = item.sourceUrl;
-            source.target = '_blank';
-            source.rel = 'noopener noreferrer';
-            source.textContent = ` Source: ${item.sourceLabel}`;
-            row.appendChild(source);
+            if (!item.actionUrl || item.actionUrl !== item.sourceUrl) {
+                const source = document.createElement('a');
+                source.className = 'health-source';
+                source.href = item.sourceUrl;
+                source.target = '_blank';
+                source.rel = 'noopener noreferrer';
+                source.textContent = ' Official source';
+                source.setAttribute('aria-label', `${label} — ${item.sourceLabel}`);
+                row.appendChild(source);
+            }
 
             if (item.secondarySourceUrl) {
                 const secondarySource = document.createElement('a');
@@ -1924,7 +1891,8 @@
                 secondarySource.href = item.secondarySourceUrl;
                 secondarySource.target = '_blank';
                 secondarySource.rel = 'noopener noreferrer';
-                secondarySource.textContent = `; ${item.secondarySourceLabel}`;
+                secondarySource.textContent = ' More information';
+                secondarySource.setAttribute('aria-label', `${label} — ${item.secondarySourceLabel}`);
                 row.appendChild(secondarySource);
             }
             return row;
@@ -1938,45 +1906,33 @@
                     console.error(`Missing health record for ${slug}`);
                     return;
                 }
-                const hasDeclarationStatus = record.declaration.status !== 'unreported';
-                const hasYellowFeverEntryRule = record.yellowFever.status === 'required' || record.yellowFever.displayOnCard === true;
+                const showDeclaration = record.declaration.status === 'required';
+                const hasYellowFeverEntryRule = record.yellowFever.status === 'required';
                 const specialRules = Array.isArray(record.special) ? record.special : (record.special ? [record.special] : []);
-                if (!hasDeclarationStatus && !hasYellowFeverEntryRule && !specialRules.length) return;
+                const visibleSpecialRules = specialRules.filter(rule => rule.status === 'required');
+                if (!showDeclaration && !hasYellowFeverEntryRule && !visibleSpecialRules.length) return;
 
                 const section = document.createElement('section');
                 section.className = 'health-details';
-                if (record.declaration.status === 'required') section.classList.add('health-details--required');
+                if (showDeclaration && record.declaration.status === 'required') section.classList.add('health-details--required');
                 section.setAttribute('aria-label', 'Health declaration and entry information');
 
                 const heading = document.createElement('h4');
-                heading.textContent = record.declaration.status === 'required'
-                    ? 'Health declaration — action required'
-                    : 'Health forms and entry rules';
+                heading.textContent = 'Health requirements';
                 section.appendChild(heading);
-                if (hasDeclarationStatus) section.appendChild(createHealthRow('Health declaration', record.declaration));
+                if (showDeclaration) section.appendChild(createHealthRow('Health declaration', record.declaration));
                 if (hasYellowFeverEntryRule) {
                     section.appendChild(createHealthRow('Yellow fever certificate', record.yellowFever));
                 }
-                specialRules.forEach(rule => section.appendChild(createHealthRow(rule.label || 'Other route-based rule', rule)));
+                visibleSpecialRules.forEach(rule => section.appendChild(createHealthRow(rule.label || 'Health entry requirement', rule)));
 
                 const checked = document.createElement('p');
                 checked.className = 'health-checked';
-                checked.textContent = `Sources checked: ${record.lastChecked}. Confirm current rules with the linked authority before travel.`;
+                checked.textContent = `Updated ${record.lastChecked}`;
                 section.appendChild(checked);
 
-                const title = card.querySelector('h3');
-                if (title) title.insertAdjacentElement('afterend', section);
-                else card.prepend(section);
+                card.appendChild(section);
             });
-        }
-
-        function getSearchHealthHint(card) {
-            const slug = (card.getAttribute('data-country') || '').split(',')[0].trim();
-            const record = window.VISA_GUIDE_HEALTH[slug];
-            if (record?.declaration?.status === 'required') {
-                return `Health form required · ${record.declaration.actionLabel || record.declaration.statusLabel}`;
-            }
-            return '';
         }
 
         function updateCitizenshipFilter() {
@@ -2032,16 +1988,7 @@
                     const countryName = document.createElement('span');
                     countryName.textContent = getCountryDisplayName(card);
                     option.appendChild(countryName);
-                    const healthHint = getSearchHealthHint(card);
-                    option.setAttribute('aria-label', healthHint
-                        ? `${getCountryDisplayName(card)} — ${healthHint}`
-                        : getCountryDisplayName(card));
-                    if (healthHint) {
-                        const hint = document.createElement('span');
-                        hint.className = 'search-result-health';
-                        hint.textContent = healthHint;
-                        option.appendChild(hint);
-                    }
+                    option.setAttribute('aria-label', getCountryDisplayName(card));
                     option.addEventListener('click', () => {
                         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         searchResults.style.display = 'none';

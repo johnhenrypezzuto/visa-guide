@@ -753,7 +753,7 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "All travelers must submit Cambodia e-Arrival, which replaces the paper immigration, health, and customs forms. Submit within 7 days before arrival; it is free.",
+      "detail": "Submit the free Cambodia e-Arrival form within 7 days before arrival. It replaces paper immigration, health, and customs forms.",
       "sourceUrl": "https://arrival.gov.kh/",
       "sourceLabel": "Cambodia e-Arrival — official requirements and health form",
       "statusLabel": "Required for all travelers",
@@ -797,9 +797,9 @@ window.VISA_GUIDE_HEALTH =
     },
     "special": {
       "status": "required",
-      "statusLabel": "Required for tourists from 1 Jan 2026",
+      "statusLabel": "Required for tourists",
       "label": "Tourist health insurance",
-      "detail": "Georgia requires tourists to carry health and accident insurance for their full stay, with at least GEL 30,000 coverage. The policy must be available in Georgian or English and may be shown electronically or on paper. Official exemptions apply to some visa/passport holders and international transport workers.",
+      "detail": "Tourists must carry health and accident insurance for the full stay, with at least GEL 30,000 coverage.",
       "sourceUrl": "https://switzerland.mfa.gov.ge/en/news/370174-saqartveloshi-mogzaurobis-sakuradghebod",
       "sourceLabel": "Embassy of Georgia — mandatory insurance for tourists"
     }
@@ -810,7 +810,7 @@ window.VISA_GUIDE_HEALTH =
     "declaration": {
       "status": "required",
       "statusLabel": "Required for all arrivals",
-      "detail": "All international passengers arriving in India must submit the online Air Suvidha 2.0 Health Self-Declaration before immigration clearance. Complete it before boarding; the government says it can be submitted up to 24 hours before arrival.",
+      "detail": "Submit the mandatory Air Suvidha 2.0 Health Self-Declaration online before arrival.",
       "actionUrl": "https://airsuvidha.civilaviation.gov.in/",
       "actionLabel": "Complete Air Suvidha 2.0",
       "sourceUrl": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2277648&lang=2&reg=48",
@@ -828,7 +828,7 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "All international passengers must submit the All Indonesia arrival declaration. It combines immigration, customs, health, and quarantine information and can be completed up to 3 days before arrival or on landing.",
+      "detail": "Submit the All Indonesia arrival declaration within 3 days before arrival or on landing. It includes health and quarantine details.",
       "sourceUrl": "https://www.imigrasi.go.id/faq",
       "sourceLabel": "Directorate General of Immigration — All Indonesia FAQ",
       "secondarySourceUrl": "https://allindonesia.imigrasi.go.id/",
@@ -973,8 +973,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for all passengers",
-      "detail": "The Lao Ministry of Health’s Lao Green Pass says all passengers arriving in Laos should complete its health declaration and obtain a QR code. It asks about vaccination status and travel history; submit from one day before travel.",
+      "statusLabel": "Required for arriving passengers",
+      "detail": "Complete the Lao Green Pass health declaration and obtain a QR code before travel.",
       "sourceUrl": "https://greenpass.gov.la/",
       "sourceLabel": "Lao Ministry of Health — Lao Green Pass",
       "actionUrl": "https://greenpass.gov.la/",
@@ -1009,8 +1009,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for all foreign arrivals",
-      "detail": "Maldives Immigration requires all foreign arrivals to submit the free Traveller Declaration within 96 hours before arrival. The current form includes a Health Declaration section with yellow-fever and Ebola exposure questions.",
+      "statusLabel": "Required for foreign arrivals",
+      "detail": "Submit the free Traveller Declaration within 96 hours before arrival.",
       "sourceUrl": "https://www2.immigration.gov.mv/tourist-visa/",
       "sourceLabel": "Maldives Immigration — Tourist visa and entry requirements",
       "actionUrl": "https://imuga.immigration.gov.mv/traveller/declaration",
@@ -1030,8 +1030,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Passenger health declaration required",
-      "detail": "Mongolia's Ministry of Health provides an active Passenger Health Declaration Form for travelers entering or leaving the country. It collects route, contact, and symptom information and requires passengers to submit the declaration truthfully.",
+      "statusLabel": "Required for passengers",
+      "detail": "Complete Mongolia’s passenger health declaration for entry or exit.",
       "sourceUrl": "https://dec.hdc.gov.mn/gate?q_id=1",
       "sourceLabel": "Mongolia Ministry of Health — Passenger Health Declaration",
       "actionUrl": "https://dec.hdc.gov.mn/gate?q_id=1",
@@ -1101,8 +1101,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Electronic health declaration for arriving travelers",
-      "detail": "Oman's Ministry of Health notice dated 22 June 2026 instructs arriving travelers to complete an electronic health declaration at or before arrival and disclose recent travel, stays, or transit in affected areas. A Civil Aviation Authority circular also directs DRC and Uganda nationals, arrivals from either country, and travelers who visited either within 21 days to complete a QR-linked Ebola self-disclosure.",
+      "statusLabel": "Required for arriving travelers",
+      "detail": "Complete Oman’s electronic health declaration on or before arrival.",
       "sourceUrl": "https://www.moh.gov.om/en/media-center/news/notice-to-arriving-travelers-to-sultanate-of-oman/",
       "sourceLabel": "Oman Ministry of Health — arrival notice, 22 June 2026",
       "secondarySourceUrl": "https://www.omanobserver.om/ampArticle/1191648",
@@ -1135,7 +1135,7 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Arriving travelers must register in eTravel within 72 hours before arrival and submit its electronic Health Declaration Checklist. The official portal is free.",
+      "detail": "Submit the free eTravel Health Declaration Checklist within 72 hours before arrival.",
       "sourceUrl": "https://www.etravel.gov.ph/frequently-asked-questions",
       "sourceLabel": "Philippine eTravel — official FAQ and health checklist",
       "statusLabel": "Required for arriving travelers",
@@ -1222,7 +1222,7 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Submit the SG Arrival Card with its electronic health declaration within 3 days before arrival. Transit passengers who do not clear immigration and certain residents entering by land are exempt.",
+      "detail": "Submit the SG Arrival Card within 3 days before arrival.",
       "sourceUrl": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
       "sourceLabel": "Singapore ICA — SG Arrival Card with Electronic Health Declaration",
       "statusLabel": "Required for most arrivals",
@@ -1532,12 +1532,12 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Ministry of Health Travel Advisory No. 18 (17 Oct 2026) requires all travelers to Mainland Tanzania to submit the online Traveller’s Health Surveillance Form before departure or on arrival. Keep its QR code or reference number. Zanzibar has a separate health form.",
+      "detail": "Submit the Traveller’s Health Surveillance Form before departure or on arrival. Zanzibar uses a separate form.",
       "sourceUrl": "https://www.moh.go.tz/storage/app/uploads/public/6ad/342/9a7/6ad3429a7996c028117271.pdf",
       "sourceLabel": "Tanzania Ministry of Health — Travel Advisory No. 18 (17 Oct 2026)",
       "secondarySourceUrl": "https://healthtravelznz.mohz.go.tz/traveller/",
       "secondarySourceLabel": "Zanzibar Ministry of Health — separate health form",
-      "statusLabel": "Required for all travelers to Mainland Tanzania",
+      "statusLabel": "Required for Mainland Tanzania",
       "actionUrl": "https://afyamsafiri.moh.go.tz/",
       "actionLabel": "Complete Mainland Tanzania health form"
     },
@@ -1651,8 +1651,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for all visitors",
-      "detail": "All visitors must apply for a Seychelles Travel Authorisation before departure. The official application includes required health and customs questions; apply within 30 days before arrival.",
+      "statusLabel": "Required before travel",
+      "detail": "Apply for the Seychelles Travel Authorisation within 30 days before departure; the application includes health questions.",
       "sourceUrl": "https://seychelles.govtas.com/en/pages/howto/",
       "sourceLabel": "Seychelles Electronic Border System — application requirements",
       "actionUrl": "https://seychelles.govtas.com/",
@@ -1670,7 +1670,7 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "detail": "Mauritius requires all passengers to complete the All-in-One Travel Form and Health Declaration Form before boarding an aircraft or vessel bound for Mauritius under the 2026 Quarantine Regulations.",
+      "detail": "Submit the All-in-One Travel Form and Health Declaration before boarding.",
       "sourceUrl": "https://passport.govmu.org/passport/?p=1494",
       "sourceLabel": "Passport and Immigration Office — 2026 Health and Entry Regulations",
       "statusLabel": "Required before boarding",
@@ -1750,7 +1750,7 @@ window.VISA_GUIDE_HEALTH =
     "declaration": {
       "status": "required",
       "statusLabel": "Required for most arrivals",
-      "detail": "Most arriving passengers must complete an Incoming Passenger Card. It includes health-status questions and serves as a health and character declaration for non-Australian citizens. The card is provided onboard or at the arrival terminal; a digital alternative is being piloted on selected Qantas flights.",
+      "detail": "Complete the Incoming Passenger Card on arrival; it includes health questions.",
       "sourceUrl": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-(ipc)",
       "sourceLabel": "Australian Border Force — Incoming Passenger Card",
       "secondarySourceUrl": "https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia/advice-to-travellers/human-health",
@@ -1800,8 +1800,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for every arriving passenger",
-      "detail": "Papua New Guinea requires every arriving passenger to submit the Digital Arrival Card. It includes health and quarantine questions and can be completed within 72 hours before arrival.",
+      "statusLabel": "Required for arriving passengers",
+      "detail": "Submit the Digital Arrival Card within 72 hours before arrival; it includes health and quarantine questions.",
       "sourceUrl": "https://ica.gov.pg/dac/png-digital-arrival-card",
       "sourceLabel": "Papua New Guinea Immigration & Citizenship Service Authority — arrival card guidance",
       "actionUrl": "https://pngdac.ica.gov.pg/",
@@ -1938,8 +1938,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required entry form includes a health declaration",
-      "detail": "Antigua and Barbuda's official entry portal directs travelers to complete an entry or exit form before travel, and the form includes a health-declaration section. Its current questions screen for travel to or close contact with people from listed outbreak countries during the previous six weeks.",
+      "statusLabel": "Required entry form includes health questions",
+      "detail": "Complete the entry or exit form before travel; it includes a health declaration.",
       "sourceUrl": "https://www.arriveantiguabarbuda.com/",
       "sourceLabel": "Official Antigua and Barbuda Arrive portal",
       "secondarySourceUrl": "https://ab.gov.ag/pdf/ArriveAntiguadotcom_Portal.pdf",
@@ -1972,8 +1972,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required for every passenger",
-      "detail": "Dominica’s official ED Card must be submitted no more than 3 days before travel. Its landing card has a separate Health Information section asking for countries visited; the card also handles immigration and customs.",
+      "statusLabel": "Required for arriving passengers",
+      "detail": "Submit Dominica’s online ED Card up to 3 days before travel; it includes a health section.",
       "sourceUrl": "https://edcard.dominica.gov.dm/EDCard_arr/Create",
       "sourceLabel": "Dominica Government — official ED Card and health section",
       "actionUrl": "https://edcard.dominica.gov.dm/EDCard_arr/Create",
@@ -2089,8 +2089,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "DGAC says passengers must present the form to enter",
-      "detail": "Bolivia's Civil Aviation Authority says the passenger health locator form must be completed and presented by the passenger for entry into Bolivia.",
+      "statusLabel": "Required for entry",
+      "detail": "Complete and present Bolivia’s passenger health form when entering the country.",
       "sourceUrl": "https://www.dgac.gob.bo/formulario-de-salud/",
       "sourceLabel": "Bolivian Civil Aviation Authority — passenger health form",
       "actionUrl": "https://www.dgac.gob.bo/formulario-de-salud/",
@@ -2188,8 +2188,8 @@ window.VISA_GUIDE_HEALTH =
     "lastChecked": "21 October 2026",
     "declaration": {
       "status": "required",
-      "statusLabel": "Required entry form",
-      "detail": "Cuba’s government travel guidance lists the Traveler’s Health Declaration and D’Viajeros QR code among the documents required to enter. Complete the digital form before travel.",
+      "statusLabel": "Required before travel",
+      "detail": "Complete Cuba’s D’Viajeros form before travel; it includes the required health declaration.",
       "sourceUrl": "https://www.cuba.travel/en/useful-information/regulations-and-formalities",
       "sourceLabel": "Cuba Travel — government entry formalities",
       "actionUrl": "https://dviajeros.mitrans.gob.cu/",
@@ -2414,7 +2414,7 @@ window.VISA_GUIDE_HEALTH =
       "status": "required",
       "statusLabel": "Required for foreign nationals",
       "label": "Health coverage or medical insurance",
-      "detail": "Foreign nationals entering Uruguay must have health coverage or medical insurance under Decree No. 55/023.",
+      "detail": "Foreign nationals must have health coverage or medical insurance while in Uruguay.",
       "sourceUrl": "https://www.impo.com.uy/bases/decretos-originales/55-2023",
       "sourceLabel": "Uruguay Official Gazette — Decree No. 55/023"
     }
